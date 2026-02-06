@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -39,12 +40,13 @@ export function Hero() {
           </p>
 
           <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-            <Button 
-              onClick={() => window.open("https://etownautodetailing.com/book-an-appointment", "_blank")}
-              className="bg-white text-black hover:bg-white/90 rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
-            >
-              Reserve Weekend Slot
-            </Button>
+            <Link href="/book-an-appointment">
+              <Button 
+                className="bg-white text-black hover:bg-white/90 rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
+              >
+                Reserve Weekend Slot
+              </Button>
+            </Link>
             <Button 
               variant="outline"
               onClick={() => window.location.href = "tel:270-319-6059"}

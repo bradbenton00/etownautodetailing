@@ -60,7 +60,7 @@ export function Navbar() {
             className="rounded-none border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase text-xs tracking-widest px-6"
             asChild
           >
-            <a href="https://etownautodetailing.com/book-an-appointment" target="_blank" rel="noopener noreferrer">Book Now</a>
+            <Link href="/book-an-appointment">Book Now</Link>
           </Button>
         </div>
 
@@ -85,14 +85,12 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="https://etownautodetailing.com/book-an-appointment" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              href="/book-an-appointment"
               className="text-2xl font-serif text-white mt-4"
             >
               Book Appointment
-            </a>
+            </Link>
           </div>
         )}
       </div>

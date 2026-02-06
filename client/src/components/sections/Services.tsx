@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -93,26 +94,19 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Button 
-                    variant={service.highlight ? "default" : "outline"}
-                    onClick={() => {
-                        const links = {
-                            "Premium Interior": "https://api.leadconnectorhq.com/widget/bookings/signature-interior-detail-etznq",
-                            "Signature Complete": "https://api.leadconnectorhq.com/widget/bookings/signature-complete-detail",
-                            "Premium Exterior": "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
-                        };
-                        const url = links[service.title as keyof typeof links] || "https://etownautodetailing.com/book-an-appointment";
-                        window.open(url, "_blank");
-                    }}
-                    className={`w-full rounded-none transition-colors group ${
-                      service.highlight 
-                        ? "bg-white text-black hover:bg-white/90" 
-                        : "border-white/10 hover:bg-white hover:text-black"
-                    }`}
-                  >
-                    Reserve Weekend Slot
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <Link href="/book-an-appointment">
+                    <Button 
+                      variant={service.highlight ? "default" : "outline"}
+                      className={`w-full rounded-none transition-colors group ${
+                        service.highlight 
+                          ? "bg-white text-black hover:bg-white/90" 
+                          : "border-white/10 hover:bg-white hover:text-black"
+                      }`}
+                    >
+                      Reserve Weekend Slot
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </motion.div>

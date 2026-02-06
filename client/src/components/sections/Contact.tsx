@@ -1,3 +1,4 @@
+import { useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -19,6 +20,7 @@ const formSchema = z.object({
 
 export function Contact() {
   const { toast } = useToast();
+  const [, setLocation] = useLocation();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -32,8 +34,8 @@ export function Contact() {
   });
 
   function onSubmit(data: z.infer<typeof formSchema>) {
-    // Redirect to booking page instead of just showing toast
-    window.open("https://etownautodetailing.com/book-an-appointment", "_blank");
+    // Redirect to internal booking page
+    setLocation("/book-an-appointment");
     toast({
       title: "Redirecting to Booking",
       description: "Taking you to our secure booking calendar...",
