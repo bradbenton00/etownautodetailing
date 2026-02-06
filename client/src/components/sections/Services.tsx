@@ -50,17 +50,22 @@ const services = [
 ];
 
 export function Services() {
+  const scrollToContact = () => {
+    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section id="services" className="py-32 bg-background relative z-10">
+    <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-white/10 pb-8">
-          <h2 className="text-4xl md:text-6xl font-serif text-white max-w-xl">Curated Packages</h2>
-          <p className="text-white/40 text-sm uppercase tracking-widest mt-6 md:mt-0 max-w-xs text-right">
-            Limited weekend slots available for premium attention.
+        <div className="mb-16 text-center">
+          <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Detailing Packages</h2>
+          <p className="text-white/50 max-w-2xl mx-auto mb-6">
+            I open 2–3 premium detail slots each weekend to ensure every vehicle receives full attention and top-tier results.
           </p>
+          <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -68,46 +73,71 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group"
             >
-              <div className="flex flex-col h-full">
-                <div className="mb-6 flex justify-between items-start">
-                  <div className="flex flex-col">
-                    <span className="text-xs uppercase tracking-widest text-white/40 mb-2">{service.duration}</span>
-                    <h3 className="text-2xl font-serif text-white group-hover:text-white/80 transition-colors">{service.title}</h3>
+              <Card className={`h-full border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-300 rounded-none flex flex-col ${service.highlight ? 'border-white/20 bg-white/[0.05]' : ''}`}>
+                <CardHeader className="text-center pb-8 border-b border-white/5">
+                  <div className="flex justify-center items-center gap-2 mb-2 text-white/40 text-xs uppercase tracking-wider">
+                    <Clock size={12} />
+                    <span>{service.duration}</span>
                   </div>
-                  <span className="text-xl font-light text-white">{service.price}</span>
-                </div>
-                
-                <p className="text-white/60 text-sm mb-8 font-light min-h-[40px]">{service.description}</p>
-                
-                <ul className="space-y-3 mb-10 flex-1">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-white/50 group-hover:text-white/70 transition-colors">
-                      <span className="w-1 h-1 bg-white/20 mt-2 rounded-full shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button 
-                  variant="outline"
-                  onClick={() => {
-                      const links = {
-                          "Premium Interior": "https://api.leadconnectorhq.com/widget/bookings/signature-interior-detail-etznq",
-                          "Signature Complete": "https://api.leadconnectorhq.com/widget/bookings/signature-complete-detail",
-                          "Premium Exterior": "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
-                      };
-                      const url = links[service.title as keyof typeof links] || "https://etownautodetailing.com/book-an-appointment";
-                      window.open(url, "_blank");
-                  }}
-                  className="w-full rounded-none border-white/20 bg-transparent text-white hover:bg-white hover:text-black transition-all h-12 uppercase text-xs tracking-widest"
-                >
-                  Reserve Slot
-                </Button>
-              </div>
+                  <CardTitle className="font-serif text-2xl text-white mb-2">{service.title}</CardTitle>
+                  <CardDescription className="text-white/50">{service.description}</CardDescription>
+                  <div className="mt-6 text-3xl font-light text-white">{service.price}</div>
+                </CardHeader>
+                <CardContent className="pt-8 flex-1 flex flex-col">
+                  <ul className="space-y-4 mb-8 flex-1">
+                    {service.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-3 text-sm text-white/70">
+                        <Check className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button 
+                    variant={service.highlight ? "default" : "outline"}
+                    onClick={() => {
+                        const links = {
+                            "Premium Interior": "https://api.leadconnectorhq.com/widget/bookings/signature-interior-detail-etznq",
+                            "Signature Complete": "https://api.leadconnectorhq.com/widget/bookings/signature-complete-detail",
+                            "Premium Exterior": "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
+                        };
+                        const url = links[service.title as keyof typeof links] || "https://etownautodetailing.com/book-an-appointment";
+                        window.open(url, "_blank");
+                    }}
+                    className={`w-full rounded-none transition-colors group ${
+                      service.highlight 
+                        ? "bg-white text-black hover:bg-white/90" 
+                        : "border-white/10 hover:bg-white hover:text-black"
+                    }`}
+                  >
+                    Reserve Weekend Slot
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
+        </div>
+
+        <div className="max-w-3xl mx-auto text-center border border-white/5 bg-white/[0.02] p-8">
+          <h3 className="text-lg font-serif text-white mb-4">Vehicle Size Pricing</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-white/60">
+            <div>
+              <span className="block text-white font-medium mb-1">Sedan / Coupe</span>
+              Base Price
+            </div>
+            <div>
+              <span className="block text-white font-medium mb-1">SUV / Truck</span>
+              +$25 – $50
+            </div>
+            <div>
+              <span className="block text-white font-medium mb-1">3-Row SUV / Van</span>
+              +$75 – $100
+            </div>
+          </div>
+          <p className="mt-6 text-xs text-white/40 italic">
+            *Final price confirmed after inspection. Heavily soiled vehicles may require add-ons.
+          </p>
         </div>
       </div>
     </section>
