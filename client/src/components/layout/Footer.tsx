@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-serif text-white mb-6">E-Town<span className="text-white/50">.</span></h3>
+            <h3 className="text-2xl font-serif text-white mb-6">All Seasons Mobile Detailing LLC<span className="text-white/50">.</span></h3>
             <p className="text-white/50 max-w-sm leading-relaxed mb-6">
               Veteran-owned and operated mobile auto detailing serving Elizabethtown, KY. 
               We bring showroom-quality cleaning directly to you.
@@ -34,7 +34,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 uppercase tracking-widest">
-          <p>&copy; {new Date().getFullYear()} E-Town Auto Detailing. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} All Seasons Mobile Detailing LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

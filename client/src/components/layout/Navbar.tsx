@@ -40,7 +40,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-xl font-serif tracking-widest font-semibold text-white uppercase z-50">
-          E-Town<span className="text-white/50">.</span>
+          All Seasons Mobile Detailing LLC<span className="text-white/50">.</span>
         </Link>
 
         {/* Desktop Nav */}
