@@ -1,10 +1,16 @@
+import { Link } from "wouter";
+
 export function Footer() {
   return (
     <footer className="bg-black border-t border-white/5 py-12 md:py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-serif text-white mb-6">All Seasons Mobile Detailing LLC<span className="text-white/50">.</span></h3>
+            <Link href="/">
+              <h3 className="text-2xl font-serif text-white mb-6 cursor-pointer hover:text-white/90 transition-colors">
+                All Seasons Mobile Detailing LLC<span className="text-white/50">.</span>
+              </h3>
+            </Link>
             <p className="text-white/50 max-w-sm leading-relaxed mb-6">
               Veteran-owned and operated mobile auto detailing serving Elizabethtown, KY. 
               We bring showroom-quality cleaning directly to you.
