@@ -143,6 +143,7 @@ export function Booking() {
             </motion.div>
           ))}
         </div>
+        </div>
       </section>
       <Footer />
     </div>
