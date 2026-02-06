@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Clock, Info, Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const bookings = [
   {
@@ -66,8 +68,10 @@ const bookings = [
 
 export function Booking() {
   return (
-    <section className="py-20 md:py-32 bg-background min-h-screen">
-      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+    <div className="min-h-screen bg-background text-foreground selection:bg-white/20 selection:text-white">
+      <Navbar />
+      <section className="py-20 md:py-32 bg-background min-h-screen">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -139,7 +143,8 @@ export function Booking() {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   );
 }
