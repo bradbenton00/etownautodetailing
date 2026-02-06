@@ -23,17 +23,18 @@ export function Process() {
 
           <div className="order-1 md:order-2 space-y-12">
             <div>
-              <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">The Process</h2>
+              <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">How It Works</h2>
               <p className="text-white/60 leading-relaxed font-light">
-                We don't just wash cars; we restore them. Our meticulous multi-stage process ensures every inch of your vehicle receives the attention it deserves.
+                We make it simple. Professional detailing without the hassle of dropping off your car.
               </p>
             </div>
 
             <div className="space-y-8">
               {[
-                { title: "Assessment", desc: "We inspect every surface to determine the best approach for your specific vehicle condition." },
-                { title: "Correction", desc: "Using advanced techniques to safely remove imperfections, swirls, and scratches from paintwork." },
-                { title: "Protection", desc: "Sealing the perfection with premium ceramic coatings that last for years, not weeks." }
+                { title: "Choose Your Package", desc: "Select the service level that fits your vehicle's needs." },
+                { title: "Reserve Your Weekend Slot", desc: "Book one of our limited premium weekend appointments." },
+                { title: "We Come to You", desc: "We arrive at your home fully equipped to transform your vehicle." },
+                { title: "Enjoy the Results", desc: "Showroom quality finish without leaving your driveway." }
               ].map((step, i) => (
                 <motion.div 
                   key={i}

@@ -13,6 +13,7 @@ const formSchema = z.object({
   email: z.string().email("Invalid email address"),
   phone: z.string().min(10, "Valid phone number required"),
   service: z.string().min(1, "Please select a service"),
+  vehicleSize: z.string().min(1, "Please select vehicle size"),
   message: z.string().optional(),
 });
 
@@ -25,6 +26,7 @@ export function Contact() {
       email: "",
       phone: "",
       service: "",
+      vehicleSize: "",
       message: "",
     },
   });
@@ -32,7 +34,7 @@ export function Contact() {
   function onSubmit(data: z.infer<typeof formSchema>) {
     toast({
       title: "Request Received",
-      description: "We'll be in touch shortly to confirm your appointment.",
+      description: "We'll be in touch shortly to confirm your weekend slot.",
     });
     console.log(data);
     form.reset();
@@ -42,8 +44,8 @@ export function Contact() {
     <section id="contact" className="py-24 bg-white/[0.02] border-t border-white/5">
       <div className="container mx-auto px-6 max-w-2xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Book Appointment</h2>
-          <p className="text-white/50">Ready to transform your vehicle? Let us know what you need.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Book Your Appointment</h2>
+          <p className="text-white/50">Veteran-Owned • Weekend Appointments Only</p>
         </div>
 
         <Form {...form}>
@@ -69,7 +71,7 @@ export function Contact() {
                   <FormItem>
                     <FormLabel className="text-white/70">Phone</FormLabel>
                     <FormControl>
-                      <Input placeholder="(555) 123-4567" {...field} className="bg-transparent border-white/10 text-white rounded-none focus-visible:ring-white/20 h-12" />
+                      <Input placeholder="(270) 555-0123" {...field} className="bg-transparent border-white/10 text-white rounded-none focus-visible:ring-white/20 h-12" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -91,29 +93,54 @@ export function Contact() {
               )}
             />
 
-            <FormField
-              control={form.control}
-              name="service"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white/70">Service Required</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="bg-transparent border-white/10 text-white rounded-none focus:ring-white/20 h-12">
-                        <SelectValue placeholder="Select a package" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent className="bg-black border-white/10 text-white rounded-none">
-                      <SelectItem value="express">The Express</SelectItem>
-                      <SelectItem value="signature">Signature Detail</SelectItem>
-                      <SelectItem value="ceramic">Ceramic Protection</SelectItem>
-                      <SelectItem value="other">Other / Custom</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid md:grid-cols-2 gap-6">
+              <FormField
+                control={form.control}
+                name="service"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-white/70">Service Required</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="bg-transparent border-white/10 text-white rounded-none focus:ring-white/20 h-12">
+                          <SelectValue placeholder="Select a package" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent className="bg-black border-white/10 text-white rounded-none">
+                        <SelectItem value="signature">Signature Complete ($450+)</SelectItem>
+                        <SelectItem value="exterior">Premium Exterior ($375+)</SelectItem>
+                        <SelectItem value="interior">Premium Interior ($295+)</SelectItem>
+                        <SelectItem value="custom">Other / Custom</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="vehicleSize"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="text-white/70">Vehicle Size</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="bg-transparent border-white/10 text-white rounded-none focus:ring-white/20 h-12">
+                          <SelectValue placeholder="Select size" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent className="bg-black border-white/10 text-white rounded-none">
+                        <SelectItem value="sedan">Sedan / Coupe</SelectItem>
+                        <SelectItem value="suv">SUV / Small Truck (+$25-50)</SelectItem>
+                        <SelectItem value="large">Large SUV / Van (+$75-100)</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
 
             <FormField
               control={form.control}
@@ -123,7 +150,7 @@ export function Contact() {
                   <FormLabel className="text-white/70">Additional Details (Optional)</FormLabel>
                   <FormControl>
                     <Textarea 
-                      placeholder="Car make/model, specific concerns..." 
+                      placeholder="Vehicle make/model, specific concerns..." 
                       {...field} 
                       className="bg-transparent border-white/10 text-white rounded-none focus-visible:ring-white/20 min-h-[100px]" 
                     />
