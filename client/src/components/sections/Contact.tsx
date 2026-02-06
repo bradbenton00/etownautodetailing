@@ -32,9 +32,11 @@ export function Contact() {
   });
 
   function onSubmit(data: z.infer<typeof formSchema>) {
+    // Redirect to booking page instead of just showing toast
+    window.open("https://etownautodetailing.com/book-an-appointment", "_blank");
     toast({
-      title: "Request Received",
-      description: "We'll be in touch shortly to confirm your weekend slot.",
+      title: "Redirecting to Booking",
+      description: "Taking you to our secure booking calendar...",
     });
     console.log(data);
     form.reset();

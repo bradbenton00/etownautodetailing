@@ -95,7 +95,15 @@ export function Services() {
                   </ul>
                   <Button 
                     variant={service.highlight ? "default" : "outline"}
-                    onClick={scrollToContact}
+                    onClick={() => {
+                        const links = {
+                            "Premium Interior": "https://api.leadconnectorhq.com/widget/bookings/signature-interior-detail-etznq",
+                            "Signature Complete": "https://api.leadconnectorhq.com/widget/bookings/signature-complete-detail",
+                            "Premium Exterior": "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
+                        };
+                        const url = links[service.title as keyof typeof links] || "https://etownautodetailing.com/book-an-appointment";
+                        window.open(url, "_blank");
+                    }}
                     className={`w-full rounded-none transition-colors group ${
                       service.highlight 
                         ? "bg-white text-black hover:bg-white/90" 

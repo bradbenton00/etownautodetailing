@@ -60,7 +60,7 @@ export function Navbar() {
             className="rounded-none border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase text-xs tracking-widest px-6"
             asChild
           >
-            <a href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>Book Now</a>
+            <a href="https://etownautodetailing.com/book-an-appointment" target="_blank" rel="noopener noreferrer">Book Now</a>
           </Button>
         </div>
 
@@ -86,8 +86,9 @@ export function Navbar() {
               </a>
             ))}
             <a 
-              href="#contact" 
-              onClick={(e) => scrollToSection(e, "#contact")}
+              href="https://etownautodetailing.com/book-an-appointment" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-2xl font-serif text-white mt-4"
             >
               Book Appointment
