@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 export function Process() {
   return (
-    <section id="process" className="py-24 bg-black relative overflow-hidden">
+    <section id="process" className="py-16 md:py-24 bg-black relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/[0.03] to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="order-2 md:order-1 relative">
              <div className="aspect-[4/5] overflow-hidden">
                 <img 

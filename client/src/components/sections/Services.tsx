@@ -55,9 +55,9 @@ export function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="mb-16 text-center">
+        <div className="mb-12 md:mb-16 text-center">
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Detailing Packages</h2>
           <p className="text-white/50 max-w-2xl mx-auto mb-6">
             I open 2–3 premium detail slots each weekend to ensure every vehicle receives full attention and top-tier results.

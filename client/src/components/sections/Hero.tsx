@@ -29,12 +29,12 @@ export function Hero() {
             Mobile Auto Detailing • Elizabethtown, KY
           </span>
           
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif text-white tracking-tighter leading-[0.9]">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-tighter leading-[0.9]">
             Weekend Mobile <br />
             <span className="italic font-light text-white/90">Auto Detailing</span>
           </h1>
 
-          <p className="max-w-xl mx-auto text-white/70 text-lg md:text-xl font-light leading-relaxed pt-4">
+          <p className="max-w-xl mx-auto text-white/70 text-base md:text-xl font-light leading-relaxed pt-4 px-4">
             Designed for busy schedules — we come to you when you’re home.
           </p>
 

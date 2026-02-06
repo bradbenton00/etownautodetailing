@@ -39,7 +39,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-xl font-serif tracking-widest font-semibold text-white uppercase z-50">
+        <Link href="/" className="text-lg md:text-xl font-serif tracking-widest font-semibold text-white uppercase z-50 max-w-[70%] leading-tight">
           All Seasons Mobile Detailing LLC<span className="text-white/50">.</span>
         </Link>
 
