@@ -1,0 +1,104 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "role": "body"
+    },
+    {
+      "family": "Jost",
+      "role": "heading"
+    },
+    {
+      "family": "Times New Roman",
+      "role": "unknown"
+    },
+    {
+      "family": "Roboto",
+      "role": "unknown"
+    },
+    {
+      "family": "Helvetica Neue",
+      "role": "unknown"
+    }
+  ],
+  "colors": {
+    "primary": "#00112C",
+    "accent": "#37CA37",
+    "background": "#FFFFFF",
+    "textPrimary": "#37CA37",
+    "link": "#37CA37"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "DM Sans",
+      "heading": "Jost"
+    },
+    "fontStacks": {
+      "heading": [
+        "Jost"
+      ],
+      "body": [
+        "Times New Roman"
+      ],
+      "paragraph": [
+        "DM Sans"
+      ]
+    },
+    "fontSizes": {
+      "h1": "66px",
+      "h2": "20px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "8px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#000000",
+      "borderColor": null,
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": null,
+    "favicon": "File saved at: attached_assets/favicon.ico",
+    "ogImage": null
+  },
+  "__framework_hints": [],
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "car owners looking for detailing services"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.8,
+    "colors": 0.95,
+    "overall": 0.875
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": false,
+      "llmSucceeded": false,
+      "finalSource": "none"
+    },
+    "buttonClassification": {
+      "llmCalled": false,
+      "llmSucceeded": true
+    }
+  }
+}
