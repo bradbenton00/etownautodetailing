@@ -13,7 +13,7 @@ export function Process() {
                 <img 
                   src="/images/ceramic-detail.jpg" 
                   alt="Detailing Process" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
+                  className="w-full h-full object-cover transition-all duration-700 opacity-80 hover:opacity-100"
                 />
              </div>
              <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-white/10 z-20 bg-black/50 backdrop-blur-sm hidden md:flex items-center justify-center">

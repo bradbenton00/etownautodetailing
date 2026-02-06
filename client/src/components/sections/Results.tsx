@@ -29,7 +29,7 @@ export function Results() {
               <img 
                 src={src} 
                 alt={`Detailing result ${index + 1}`} 
-                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100 grayscale group-hover:grayscale-0"
+                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
               />
               <div className="absolute inset-0 border border-white/10 pointer-events-none transition-colors group-hover:border-white/20" />
             </motion.div>
