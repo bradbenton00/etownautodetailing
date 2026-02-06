@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location, setLocation] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +23,30 @@ export function Navbar() {
     { name: "About", href: "#about" },
   ];
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false);
+    setMobileMenuOpen(false);
+
+    if (location === "/") {
+      // If on home page, scroll to section
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // If on other page, navigate to home with hash
+      setLocation("/");
+      // We need a small delay to allow navigation to happen before scrolling
+      // or we can rely on the browser handling /#section if we used standard links
+      // But since we use wouter setLocation, we might need to handle scrolling after mount
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        } else {
+            window.location.hash = href;
+        }
+      }, 100);
     }
   };
 
@@ -49,8 +68,8 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
-              className="text-sm uppercase tracking-widest text-white/70 hover:text-white transition-colors"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="text-sm uppercase tracking-widest text-white/70 hover:text-white transition-colors cursor-pointer"
             >
               {link.name}
             </a>
@@ -79,8 +98,8 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
-                className="text-2xl font-serif text-white/80 hover:text-white"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="text-2xl font-serif text-white/80 hover:text-white cursor-pointer"
               >
                 {link.name}
               </a>
