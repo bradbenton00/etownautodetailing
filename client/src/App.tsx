@@ -16,7 +16,9 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/book-an-appointment" component={Booking} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/sms-privacy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/sms-terms-of-service" component={TermsOfService} />
       <Route component={NotFound} />
     </Switch>
   );
