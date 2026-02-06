@@ -128,15 +128,17 @@ export function Booking() {
                   </ul>
 
                   <Button 
-                    onClick={() => window.open(booking.link, "_blank")}
+                    asChild
                     className={`w-full rounded-none h-14 uppercase tracking-widest text-xs font-medium transition-all ${
                       booking.highlight 
                         ? "bg-white text-black hover:bg-white/90" 
                         : "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black"
                     }`}
                   >
-                    Book Now
-                    <ArrowRight className="w-4 h-4 ml-2" />
+                    <a href={booking.link} target="_blank" rel="noopener noreferrer">
+                      Book Now
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
