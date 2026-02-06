@@ -6,6 +6,7 @@ import { Process } from "@/components/sections/Process";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Contact } from "@/components/sections/Contact";
 import { About } from "@/components/sections/About";
+import { Results } from "@/components/sections/Results";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Process />
+        <Results />
         <About />
         <Testimonials />
         <Contact />
