@@ -67,7 +67,7 @@ const bookings = [
 export function Booking() {
   return (
     <section className="py-20 md:py-32 bg-background min-h-screen">
-      <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function Booking() {
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </motion.div>
 
-        <div className="space-y-6 md:space-y-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {bookings.map((booking, index) => (
             <motion.div
               key={booking.title}
@@ -87,69 +87,54 @@ export function Booking() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className={`group border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-500 rounded-none overflow-hidden ${booking.highlight ? 'border-white/20 bg-white/[0.05]' : ''}`}>
-                <div className="grid md:grid-cols-[1.5fr,1fr] gap-6 md:gap-8 p-6 md:p-12">
-                  <div className="flex flex-col justify-between h-full space-y-6 md:space-y-8">
-                    <div>
-                      <div className="flex flex-wrap items-center gap-3 text-white/40 text-[10px] md:text-xs uppercase tracking-widest mb-4">
-                        <div className="flex items-center gap-1">
-                          <Clock size={12} />
-                          <span>{booking.duration}</span>
-                        </div>
-                        {booking.highlight && (
-                          <div className="flex items-center gap-2">
-                            <span className="w-1 h-1 bg-white/20 rounded-full" />
-                            <span className="text-white/80">Most Popular</span>
-                          </div>
-                        )}
-                      </div>
-                      <h3 className="text-2xl md:text-3xl font-serif text-white mb-4 group-hover:text-white/90 transition-colors">{booking.title}</h3>
-                      <p className="text-white/60 font-light leading-relaxed max-w-xl text-sm md:text-base">
-                        {booking.description}
-                      </p>
+              <Card className={`group border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-500 rounded-none overflow-hidden h-full flex flex-col ${booking.highlight ? 'border-white/20 bg-white/[0.05]' : ''}`}>
+                <CardHeader className="text-center pb-6 md:pb-8 border-b border-white/5">
+                    <div className="flex justify-center items-center gap-2 mb-2 text-white/40 text-[10px] md:text-xs uppercase tracking-wider">
+                      <Clock size={12} />
+                      <span>{booking.duration}</span>
+                      {booking.highlight && (
+                        <>
+                          <span className="w-1 h-1 bg-white/20 rounded-full" />
+                          <span className="text-white/80">Most Popular</span>
+                        </>
+                      )}
                     </div>
+                  <CardTitle className="font-serif text-2xl md:text-3xl text-white mb-2">{booking.title}</CardTitle>
+                  <CardDescription className="text-white/50 text-sm md:text-base leading-relaxed">{booking.description}</CardDescription>
+                  <div className="mt-6 text-3xl font-light text-white">{booking.price}</div>
+                </CardHeader>
 
-                    <div className="space-y-4">
-                      <div className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/40">
-                        {booking.details.map((detail, i) => (
-                          <span key={i} className="flex items-center gap-2">
-                            <Info size={12} />
-                            {detail}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                <CardContent className="pt-8 flex-1 flex flex-col">
+                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8 text-sm text-white/40">
+                    {booking.details.map((detail, i) => (
+                      <span key={i} className="flex items-center gap-2">
+                        <Info size={12} />
+                        {detail}
+                      </span>
+                    ))}
                   </div>
 
-                  <div className="flex flex-col justify-between border-t md:border-t-0 md:border-l border-white/5 pt-6 md:pt-0 md:pl-12">
-                    <div>
-                      <span className="text-white/40 text-[10px] md:text-xs uppercase tracking-widest mb-4 md:mb-6 block">Includes</span>
-                      <ul className="space-y-3 mb-8">
-                        {booking.features.map((feature, i) => (
-                          <li key={i} className="flex items-start gap-3 text-sm text-white/70">
-                            <Check className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div className="space-y-4">
-                      <div className="text-2xl md:text-3xl font-light text-white">{booking.price}</div>
-                      <Button 
-                        onClick={() => window.open(booking.link, "_blank")}
-                        className={`w-full rounded-none h-14 uppercase tracking-widest text-xs font-medium transition-all ${
-                          booking.highlight 
-                            ? "bg-white text-black hover:bg-white/90" 
-                            : "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black"
-                        }`}
-                      >
-                        Book Now
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
+                  <ul className="space-y-4 mb-8 flex-1 max-w-sm mx-auto w-full">
+                    {booking.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm text-white/70">
+                        <Check className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button 
+                    onClick={() => window.open(booking.link, "_blank")}
+                    className={`w-full rounded-none h-14 uppercase tracking-widest text-xs font-medium transition-all ${
+                      booking.highlight 
+                        ? "bg-white text-black hover:bg-white/90" 
+                        : "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black"
+                    }`}
+                  >
+                    Book Now
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </CardContent>
               </Card>
             </motion.div>
           ))}
