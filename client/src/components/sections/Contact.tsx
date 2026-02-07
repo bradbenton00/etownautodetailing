@@ -22,7 +22,7 @@ export function Contact() {
           <p className="text-white/50">Veteran-Owned • Weekend Appointments Only</p>
         </div>
 
-        <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden">
+        <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-12">
             <iframe
                 src="https://api.leadconnectorhq.com/widget/form/BKlp9EKi6oTIj24mkLr7"
                 style={{
@@ -47,6 +47,19 @@ export function Contact() {
                 title="FB Quote Form – Detailing"
             >
             </iframe>
+        </div>
+
+        <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden">
+            <iframe 
+                src="https://maps.google.com/maps?q=140+Brentwood+Drive,+Elizabethtown,+KY+42701&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="400" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
+            />
         </div>
       </div>
     </section>
