@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import { Booking } from "@/pages/Booking";
 import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 import { TermsOfService } from "@/pages/TermsOfService";
+import { FAQ } from "@/pages/FAQ";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/book-an-appointment" component={Booking} />
+      <Route path="/faq" component={FAQ} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/sms-privacy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />

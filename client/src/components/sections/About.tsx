@@ -47,7 +47,7 @@ export function About() {
                 </div>
                 <div>
                   <h3 className="text-white font-serif text-lg mb-1">Elizabethtown Local</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">Proudly serving Elizabethtown, KY and surrounding areas with mobile convenience.</p>
+                  <p className="text-white/50 text-sm leading-relaxed">Proudly serving Elizabethtown, Radcliff, Vine Grove, and Rineyville with mobile convenience.</p>
                 </div>
               </div>
             </div>

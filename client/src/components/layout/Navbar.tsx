@@ -21,6 +21,7 @@ export function Navbar() {
     { name: "Services", href: "#services" },
     { name: "Process", href: "#process" },
     { name: "About", href: "#about" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

@@ -15,6 +15,11 @@ export function Footer() {
               Veteran-owned and operated mobile auto detailing serving Elizabethtown, KY. 
               We bring showroom-quality cleaning directly to you.
             </p>
+            <div className="mb-6">
+               <Link href="/faq" className="text-white/50 hover:text-white text-sm uppercase tracking-widest border-b border-white/10 pb-1">
+                 View Frequently Asked Questions
+               </Link>
+            </div>
             <p className="text-white/50 max-w-sm leading-relaxed italic">
               "When your car looks and smells great, you feel great."
             </p>
