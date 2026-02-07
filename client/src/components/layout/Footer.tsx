@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="bg-black border-t border-white/5 py-12 md:py-16">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
           <div className="md:col-span-2">
             <Link href="/">
               <h3 className="text-2xl font-serif text-white mb-6 cursor-pointer hover:text-white/90 transition-colors">
@@ -29,6 +29,16 @@ export function Footer() {
             </ul>
           </div>
           
+          <div>
+            <h4 className="text-white font-medium mb-4 uppercase tracking-widest text-xs">Service Areas</h4>
+            <ul className="space-y-3 text-white/50 text-sm">
+              <li>Elizabethtown</li>
+              <li>Radcliff • Vine Grove</li>
+              <li>Rineyville • Glendale</li>
+              <li>Hodgenville</li>
+            </ul>
+          </div>
+
           <div>
             <h4 className="text-white font-medium mb-4 uppercase tracking-widest text-xs">Availability</h4>
             <ul className="space-y-3 text-white/50">
