@@ -58,7 +58,7 @@ export function Contact() {
                 allowFullScreen={true} 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
+                className="opacity-80 hover:opacity-100 transition-opacity duration-700"
             />
         </div>
       </div>
