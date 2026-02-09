@@ -63,6 +63,24 @@ const bookings = [
       "Long-term exterior protection"
     ],
     link: "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
+  },
+  {
+    title: "Fleet & Maintenance",
+    duration: "Weekly / Bi-Weekly",
+    price: "Custom",
+    description: "Regular scheduled maintenance for your fleet or personal vehicle. Keep it showroom ready year-round.",
+    details: [
+      "Weekly or Bi-Weekly schedule",
+      "Consistent quality",
+      "Multi-vehicle discounts"
+    ],
+    features: [
+      "Exterior wash",
+      "Wheels & tires cleaned",
+      "Quick interior wipe (dash, seats, glass)",
+      "Regular maintenance schedule"
+    ],
+    link: "https://api.leadconnectorhq.com/widget/bookings/fleet-maintenance" 
   }
 ];
 
@@ -82,7 +100,7 @@ export function Booking() {
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {bookings.map((booking, index) => (
             <motion.div
               key={booking.title}

@@ -47,6 +47,19 @@ const services = [
       "Wheel faces cleaned",
       "Tire dressing applied"
     ]
+  {
+    title: "Fleet & Maintenance",
+    description: "Regular weekly or bi-weekly care.",
+    price: "Custom",
+    duration: "Recurring",
+    features: [
+      "Exterior wash",
+      "Wheels & tires cleaned",
+      "Quick interior wipe",
+      "Dash, seats & glass",
+      "Weekly or Bi-Weekly schedule",
+      "Perfect for maintaining shine"
+    ]
   }
 ];
 
@@ -66,7 +79,7 @@ export function Services() {
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
