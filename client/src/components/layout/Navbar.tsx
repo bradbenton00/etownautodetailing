@@ -59,8 +59,13 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-lg md:text-xl font-serif tracking-widest font-semibold text-white uppercase z-50 max-w-[70%] leading-tight">
-          All Seasons Mobile Detailing LLC<span className="text-white/50">.</span>
+        <Link href="/" className="flex flex-col z-50 max-w-[80%] group">
+          <span className="font-serif text-2xl md:text-3xl font-bold text-white tracking-wide leading-none group-hover:text-white/90 transition-colors">
+            All Seasons
+          </span>
+          <span className="font-sans text-[10px] md:text-xs font-bold text-white/50 tracking-[0.25em] uppercase leading-relaxed ml-0.5 group-hover:text-white/70 transition-colors">
+            Mobile Detailing LLC
+          </span>
         </Link>
 
         {/* Desktop Nav */}
