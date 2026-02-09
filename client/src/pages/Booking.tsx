@@ -80,7 +80,7 @@ const bookings = [
       "Quick interior wipe (dash, seats, glass)",
       "Regular maintenance schedule"
     ],
-    link: "https://api.leadconnectorhq.com/widget/bookings/fleet-maintenance" 
+    link: "https://api.leadconnectorhq.com/widget/bookings/fleet-maintenance-cleaning"
   }
 ];
 

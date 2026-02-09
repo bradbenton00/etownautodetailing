@@ -47,6 +47,7 @@ const services = [
       "Wheel faces cleaned",
       "Tire dressing applied"
     ]
+  },
   {
     title: "Fleet & Maintenance",
     description: "Regular weekly or bi-weekly care.",
