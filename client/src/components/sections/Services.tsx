@@ -94,6 +94,27 @@ export function Services() {
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </div>
 
+        <div className="max-w-3xl mx-auto text-center border border-white/5 bg-white/[0.02] p-8 mb-16">
+          <h3 className="text-lg font-serif text-white mb-4">Vehicle Size Pricing</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-white/60">
+            <div>
+              <span className="block text-white font-medium mb-1">Sedan / Coupe</span>
+              Base Price
+            </div>
+            <div>
+              <span className="block text-white font-medium mb-1">SUV / Truck</span>
+              +$25 – $50
+            </div>
+            <div>
+              <span className="block text-white font-medium mb-1">3-Row SUV / Van</span>
+              +$75 – $100
+            </div>
+          </div>
+          <p className="mt-6 text-xs text-white/40 italic">
+            *Final price confirmed after inspection. Heavily soiled vehicles may require add-ons.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
           {services.map((service, index) => (
             <motion.div
@@ -141,26 +162,6 @@ export function Services() {
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto text-center border border-white/5 bg-white/[0.02] p-8">
-          <h3 className="text-lg font-serif text-white mb-4">Vehicle Size Pricing</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-white/60">
-            <div>
-              <span className="block text-white font-medium mb-1">Sedan / Coupe</span>
-              Base Price
-            </div>
-            <div>
-              <span className="block text-white font-medium mb-1">SUV / Truck</span>
-              +$25 – $50
-            </div>
-            <div>
-              <span className="block text-white font-medium mb-1">3-Row SUV / Van</span>
-              +$75 – $100
-            </div>
-          </div>
-          <p className="mt-6 text-xs text-white/40 italic">
-            *Final price confirmed after inspection. Heavily soiled vehicles may require add-ons.
-          </p>
-        </div>
       </div>
     </section>
   );
