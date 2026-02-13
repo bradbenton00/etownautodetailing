@@ -59,13 +59,11 @@ export function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-white/5 relative z-10 p-2">
-                <video 
-                  src="/videos/brand-intro.mp4" 
-                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700" 
-                  controls
-                  playsInline
-                  poster="/images/about-detail.png"
+            <div className="aspect-square bg-white/5 relative z-10 p-2">
+                <img 
+                  src="/images/about-detail.png" 
+                  alt="Detailing in progress" 
+                  className="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 transition-opacity duration-700" 
                 />
             </div>
             <div className="absolute -top-4 -right-4 w-full h-full border border-white/10 z-0" />
