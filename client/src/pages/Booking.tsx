@@ -9,10 +9,10 @@ const bookings = [
   {
     title: "Signature Complete Detail",
     duration: "6–8 Hours",
-    price: "$399 + tax",
+    price: "$290 + tax",
     description: "Estimated time: 6–8 hours, depending on vehicle size & condition. Final price confirmed after vehicle inspection. To make your car look & feel like new, you will never want to sell it.",
     details: [
-      "Starting at $399 (Sedans)",
+      "Starting at $290 (Sedans)",
       "Small SUV: +$50",
       "Full-Size SUV / Truck: +$75",
       "Vans: Custom quote"
@@ -31,10 +31,10 @@ const bookings = [
   {
     title: "Signature Interior Detail",
     duration: "3–4 Hours",
-    price: "$229 + tax",
+    price: "$170 + tax",
     description: "Estimated time: 3-4 hours. Deep interior reset including full steam cleaning, extraction, and detailed cleaning of all surfaces.",
     details: [
-      "Starting at $229 (Sedans)",
+      "Starting at $170 (Sedans)",
       "Small SUV: +$50",
       "Full-Size SUV / Truck: +$75"
     ],
@@ -49,10 +49,10 @@ const bookings = [
   {
     title: "Signature Exterior Detail",
     duration: "3–4 Hours",
-    price: "$199 + tax",
+    price: "$150 + tax",
     description: "Estimated time: 3-4 hours. Comprehensive exterior restoration including decontamination and long-term protection.",
     details: [
-      "Starting at $199 (Sedans)",
+      "Starting at $150 (Sedans)",
       "Small SUV: +$50",
       "Full-Size SUV / Truck: +$75"
     ],
