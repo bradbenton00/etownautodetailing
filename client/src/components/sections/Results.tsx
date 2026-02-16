@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/gallery-1.jpg",
-  "/images/gallery-2.jpg",
-  "/images/gallery-3.jpg"
+  "/images/red-truck-side.jpg",
+  "/images/black-suv-front.jpg",
+  "/images/black-truck-split.jpg"
 ];
 
 export function Results() {
