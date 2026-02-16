@@ -22,7 +22,7 @@ const services = [
   {
     title: "Signature Complete",
     description: "Our most popular restoration package.",
-    price: "$199 + tax",
+    price: "$299 + tax",
     duration: "5-6 hrs",
     features: [
       "Complete interior deep clean",
