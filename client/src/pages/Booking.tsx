@@ -49,10 +49,10 @@ const bookings = [
   {
     title: "Signature Exterior Detail",
     duration: "3–4 Hours",
-    price: "$159 + tax",
+    price: "$169 + tax",
     description: "Estimated time: 3-4 hours. Comprehensive exterior restoration including decontamination and long-term protection.",
     details: [
-      "Starting at $159 (Sedans)",
+      "Starting at $169 (Sedans)",
       "Small SUV: +$50",
       "Full-Size SUV / Truck: +$75"
     ],

@@ -37,7 +37,7 @@ const services = [
   {
     title: "Premium Exterior",
     description: "Showroom shine & protection.",
-    price: "$159 + tax",
+    price: "$169 + tax",
     duration: "3-4 hrs",
     features: [
       "Hand wash & dry",
