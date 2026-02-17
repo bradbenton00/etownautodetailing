@@ -39,10 +39,10 @@ export function Booking() {
             className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px]"
           >
             <iframe 
-              src="https://api.leadconnectorhq.com/widget/booking/GCsFQ0VGa5d4VZHxMEBX" 
+              src="https://api.leadconnectorhq.com/widget/booking/5tJWoiEAiohaFLNXte7S" 
               style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
               scrolling="no" 
-              id="GCsFQ0VGa5d4VZHxMEBX_1771369974069"
+              id="5tJWoiEAiohaFLNXte7S_1771370071664"
             />
           </motion.div>
         </div>
