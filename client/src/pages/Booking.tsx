@@ -9,10 +9,10 @@ const bookings = [
   {
     title: "Signature Complete Detail",
     duration: "6–8 Hours",
-    price: "$299 + tax",
+    price: "$399 + tax",
     description: "Estimated time: 6–8 hours, depending on vehicle size & condition. Final price confirmed after vehicle inspection. To make your car look & feel like new, you will never want to sell it.",
     details: [
-      "Starting at $299 (Sedans)",
+      "Starting at $399 (Sedans)",
       "Small SUV: +$50",
       "Full-Size SUV / Truck: +$75",
       "Vans: Custom quote"
