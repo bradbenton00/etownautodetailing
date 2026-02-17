@@ -65,24 +65,6 @@ const bookings = [
     link: "https://api.leadconnectorhq.com/widget/bookings/signature-exterior-detailing"
   },
   {
-    title: "Kids Car Seat Cleaning",
-    duration: "1–2 Hours",
-    price: "$75 per vehicle",
-    description: "Deep clean all child car seats in one vehicle. We use child-safe, non-toxic products to sanitize and refresh.",
-    details: [
-      "Flat rate: $75 per vehicle",
-      "All seats included",
-      "Safe & Non-toxic"
-    ],
-    features: [
-      "Deep steam cleaning",
-      "Stain extraction",
-      "Safe methods",
-      "Sanitization"
-    ],
-    link: "https://api.leadconnectorhq.com/widget/bookings/kids-car-seat-cleaning"
-  },
-  {
     title: "Fleet & Maintenance",
     duration: "Weekly / Bi-Weekly",
     price: "Custom",

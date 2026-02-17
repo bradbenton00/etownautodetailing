@@ -49,20 +49,6 @@ const services = [
     ]
   },
   {
-    title: "Kids Car Seat Cleaning",
-    description: "Deep clean all child car seats.",
-    price: "$75",
-    duration: "1-2 hrs",
-    features: [
-      "Flat rate per vehicle",
-      "Deep steam cleaning",
-      "Stain extraction",
-      "Safe & non-toxic",
-      "Sanitization included",
-      "All seats in vehicle"
-    ]
-  },
-  {
     title: "Fleet & Maintenance",
     description: "Regular weekly or bi-weekly care.",
     price: "Custom",
