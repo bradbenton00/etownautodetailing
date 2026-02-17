@@ -99,6 +99,61 @@ const bookings = [
       "Regular maintenance schedule"
     ],
     link: "https://api.leadconnectorhq.com/widget/bookings/fleet-maintenance-cleaning"
+  },
+  {
+    title: "Grill Cleaning - Standard",
+    duration: "1–2 Hours",
+    price: "$149",
+    description: "Standard Grill Refresh. Includes interior scrape + degrease, grates cleaned & sanitized, burner surface clean, drip tray emptied, exterior wipe-down.",
+    details: [
+      "Flat rate: $149",
+      "Mobile Service",
+      "Safe Degreasing"
+    ],
+    features: [
+      "Interior scrape + degrease",
+      "Grates cleaned & sanitized",
+      "Burner surface clean",
+      "Exterior wipe-down"
+    ],
+    link: "https://api.leadconnectorhq.com/widget/bookings/grill-cleaning" 
+  },
+  {
+    title: "Grill Cleaning - Deep Restore",
+    duration: "2–3 Hours",
+    price: "$279",
+    description: "Deep Restore (Full Disassembly). Includes everything in Standard plus disassembly of grates/flame tamers, deep degreasing soak, burner port cleaning, and stainless polish.",
+    details: [
+      "Flat rate: $279",
+      "Full Disassembly",
+      "Most Popular"
+    ],
+    features: [
+      "Deep degreasing soak",
+      "Burner port cleaning",
+      "Heat plate detail",
+      "Stainless polish"
+    ],
+    highlight: true,
+    link: "https://api.leadconnectorhq.com/widget/bookings/grill-cleaning"
+  },
+  {
+    title: "Grill Cleaning - Large/Smoker",
+    duration: "3–4 Hours",
+    price: "$329",
+    description: "For Smokers or Large Grills (4+ Burners). Full deep clean, smoke box/pellet tray detail, ash + grease chamber degrease, exterior polish.",
+    details: [
+      "Flat rate: $329",
+      "4+ Burners / Smokers",
+      "Deep Clean"
+    ],
+    features: [
+      "Full deep clean",
+      "Smoke box / pellet tray detail",
+      "Ash + grease chamber degrease",
+      "Function check"
+    ],
+    link: "https://api.leadconnectorhq.com/widget/bookings/grill-cleaning"
   }
 ];
 
