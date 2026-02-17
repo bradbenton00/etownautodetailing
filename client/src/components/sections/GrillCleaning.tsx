@@ -148,9 +148,6 @@ export function GrillCleaning() {
 
         {/* Footer */}
         <div className="text-center">
-          <p className="text-white/50 mb-6">
-            Questions? Text/call <a href="tel:270-319-6059" className="text-white hover:underline">270-319-6059</a> or book online.
-          </p>
           <Link href="/book-an-appointment">
             <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black rounded-none px-8">
               Check Availability
