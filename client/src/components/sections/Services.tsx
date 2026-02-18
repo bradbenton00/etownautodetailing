@@ -77,9 +77,6 @@ export function Services() {
             * Final price is upon inspection
           </p>
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Detailing Packages</h2>
-          <p className="text-white/50 max-w-2xl mx-auto mb-6">
-            I open 2–3 premium detail slots each weekend to ensure every vehicle receives full attention and top-tier results.
-          </p>
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </div>
 
