@@ -136,19 +136,6 @@ export function GrillCleaning() {
           ))}
         </div>
 
-        {/* Add-ons Section */}
-        <div className="max-w-3xl mx-auto border border-white/5 bg-white/[0.02] p-8 mb-16">
-          <h3 className="text-lg font-serif text-white mb-6 text-center">Add-ons</h3>
-          <div className="grid md:grid-cols-2 gap-y-4 gap-x-8">
-            {addons.map((addon, i) => (
-              <div key={i} className="flex justify-between items-center border-b border-white/5 pb-2 last:border-0 last:pb-0">
-                <span className="text-white/70 text-sm">{addon.name}</span>
-                <span className="text-white/40 text-sm font-light">{addon.price}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Footer */}
         <div className="text-center">
           <Link href="/book-an-appointment">
