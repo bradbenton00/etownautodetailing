@@ -31,7 +31,7 @@ export function Hero() {
           </span>
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-tighter leading-[0.9]">
-            Weekend Mobile <br />
+            Premium Mobile <br />
             <span className="italic font-light text-white/90">Auto Detailing</span>
           </h1>
 
