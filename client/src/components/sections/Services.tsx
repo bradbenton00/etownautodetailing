@@ -138,7 +138,7 @@ export function Services() {
                           : "border-white/10 hover:bg-white hover:text-black"
                       }`}
                     >
-                      Reserve Weekend Slot
+                      Reserve Now
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>

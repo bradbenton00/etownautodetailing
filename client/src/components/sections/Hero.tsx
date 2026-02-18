@@ -44,7 +44,7 @@ export function Hero() {
               <Button 
                 className="bg-white text-black hover:bg-white/90 rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
               >
-                Reserve Weekend Slot
+                Reserve Now
               </Button>
             </Link>
             <Button 
