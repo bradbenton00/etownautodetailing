@@ -73,6 +73,9 @@ export function Services() {
     <section id="services" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="mb-12 md:mb-16 text-center">
+          <p className="text-white/60 text-xs md:text-sm uppercase tracking-widest mb-8 border border-white/10 inline-block px-4 py-2">
+            * Final price is upon inspection
+          </p>
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Detailing Packages</h2>
           <p className="text-white/50 max-w-2xl mx-auto mb-6">
             I open 2–3 premium detail slots each weekend to ensure every vehicle receives full attention and top-tier results.

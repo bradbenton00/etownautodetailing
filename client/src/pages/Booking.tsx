@@ -27,6 +27,9 @@ export function Booking() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12 md:mb-16"
           >
+            <p className="text-white/60 text-xs md:text-sm uppercase tracking-widest mb-8 border border-white/10 inline-block px-4 py-2">
+              * Final price is upon inspection
+            </p>
             <span className="text-white/40 uppercase tracking-[0.2em] text-[10px] md:text-xs font-medium mb-4 block">Weekend Appointments Only</span>
             <h1 className="text-3xl md:text-6xl font-serif text-white mb-6">Book Your Appointment</h1>
             <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
