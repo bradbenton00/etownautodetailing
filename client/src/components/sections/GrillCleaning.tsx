@@ -31,7 +31,7 @@ const grillServices = [
       "Burner port cleaning",
       "Heat plate detail",
       "Stainless polish",
-      "Performance check"
+      "Function check"
     ],
     highlight: true,
     badge: "Most Popular",
