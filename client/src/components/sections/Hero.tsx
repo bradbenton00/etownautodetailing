@@ -57,7 +57,7 @@ export function Hero() {
           </div>
           
           <p className="text-white/40 text-xs uppercase tracking-widest mt-8">
-            Limited weekend availability — spots fill fast
+            Limited availability — spots fill fast
           </p>
         </motion.div>
       </div>
