@@ -87,9 +87,9 @@ export function GrillCleaning() {
               alt="Grill Cleaning Before and After Results" 
               className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
             />
-            <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-white/10 px-4 py-2">
-              <span className="text-white/80 text-xs font-serif tracking-widest uppercase">Actual Client Results</span>
-            </div>
+          </div>
+          <div className="mt-4 text-center">
+            <span className="text-white/40 text-[10px] md:text-xs font-serif tracking-[0.2em] uppercase">Actual Client Results</span>
           </div>
         </motion.div>
 
