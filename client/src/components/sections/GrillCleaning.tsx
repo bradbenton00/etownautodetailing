@@ -74,6 +74,25 @@ export function GrillCleaning() {
           <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
         </div>
 
+        {/* Featured Image */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16 relative group"
+        >
+          <div className="aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden bg-white/5 border border-white/10">
+            <img 
+              src="/images/grill-before-after.jpg" 
+              alt="Grill Cleaning Before and After Results" 
+              className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
+            />
+            <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm border border-white/10 px-4 py-2">
+              <span className="text-white/80 text-xs font-serif tracking-widest uppercase">Actual Client Results</span>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Packages Grid */}
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
           {grillServices.map((service, index) => (
