@@ -53,13 +53,6 @@ const grillServices = [
   }
 ];
 
-const addons = [
-  { name: "Additional grill (same property)", price: "$99" },
-  { name: "Built-in outdoor kitchen grill", price: "+ $50" },
-  { name: "Rust treatment", price: "+ $40" },
-  { name: "Grease tray replacement", price: "$25 install" } // Customer supplies
-];
-
 export function GrillCleaning() {
   return (
     <section id="grill-cleaning" className="py-24 bg-white/[0.02] border-t border-white/5">
