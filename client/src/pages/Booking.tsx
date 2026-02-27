@@ -41,10 +41,10 @@ export function Booking() {
             className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px]"
           >
             <iframe 
-              src="https://api.leadconnectorhq.com/widget/group/wDbdzPB90QZvZ0kh5p9d" 
+              src="https://api.leadconnectorhq.com/widget/groups/servicecalendars2-60ba2700-f8c6-4ee1-b6ec-286814dd0cb1" 
               style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
               scrolling="no" 
-              id="wDbdzPB90QZvZ0kh5p9d_1772154139677"
+              id="servicecalendars2-60ba2700-f8c6-4ee1-b6ec-286814dd0cb1"
             />
           </motion.div>
         </div>
