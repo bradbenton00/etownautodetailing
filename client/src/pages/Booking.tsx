@@ -7,7 +7,7 @@ export function Booking() {
   useEffect(() => {
     // Load the LeadConnector script
     const script = document.createElement("script");
-    script.src = "https://api.leadconnectorhq.com/js/form_embed.js";
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
     script.type = "text/javascript";
     script.async = true;
     document.body.appendChild(script);
@@ -41,10 +41,10 @@ export function Booking() {
             className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px]"
           >
             <iframe 
-              src="https://api.leadconnectorhq.com/widget/booking/5tJWoiEAiohaFLNXte7S" 
+              src="https://api.leadconnectorhq.com/widget/group/wDbdzPB90QZvZ0kh5p9d" 
               style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
               scrolling="no" 
-              id="5tJWoiEAiohaFLNXte7S_1771370071664"
+              id="wDbdzPB90QZvZ0kh5p9d_1772154139677"
             />
           </motion.div>
         </div>
