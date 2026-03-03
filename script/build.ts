@@ -59,6 +59,33 @@ async function buildAll() {
     external: externals,
     logLevel: "info",
   });
+
+  // Create fallback routing for static deployment
+  console.log("creating static route fallbacks...");
+  const fs = await import("fs");
+  const path = await import("path");
+  const publicDir = path.join(process.cwd(), "dist", "public");
+  
+  // Create 404 fallback
+  fs.copyFileSync(path.join(publicDir, "index.html"), path.join(publicDir, "404.html"));
+  
+  // Create specific route folders
+  const routes = [
+    "/sms-privacy", 
+    "/privacy-policy", 
+    "/terms-of-service", 
+    "/sms-terms-of-service", 
+    "/faq", 
+    "/book-an-appointment"
+  ];
+  
+  for (const route of routes) {
+    const routeDir = path.join(publicDir, route);
+    if (!fs.existsSync(routeDir)) {
+      fs.mkdirSync(routeDir, { recursive: true });
+    }
+    fs.copyFileSync(path.join(publicDir, "index.html"), path.join(routeDir, "index.html"));
+  }
 }
 
 buildAll().catch((err) => {
