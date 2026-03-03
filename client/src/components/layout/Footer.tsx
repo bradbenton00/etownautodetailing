@@ -51,9 +51,9 @@ export function Footer() {
           <div>
             <h4 className="text-white font-medium mb-4 uppercase tracking-widest text-xs">Availability</h4>
             <ul className="space-y-3 text-white/50">
-              <li className="text-white/80 font-medium">Weekend Appointments Only</li>
+              <li className="text-white/80 font-medium">Flexible Scheduling</li>
               <li>Limited slots available</li>
-              <li>Sat & Sun: By Appointment</li>
+              <li>By Appointment Only</li>
             </ul>
           </div>
         </div>

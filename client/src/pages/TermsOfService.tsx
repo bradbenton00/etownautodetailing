@@ -15,7 +15,7 @@ export function TermsOfService() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">1. Appointments & Booking</h3>
           <p>
-            Appointments are available on weekends only. We operate on a scheduled basis and strive to arrive within the scheduled time window. However, unforeseen traffic or previous job complications may cause slight delays. We will communicate any delays promptly.
+            Appointments are available by booking online or contacting us. We operate on a scheduled basis and strive to arrive within the scheduled time window. However, unforeseen traffic or previous job complications may cause slight delays. We will communicate any delays promptly.
           </p>
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">2. Pricing & Payment</h3>
