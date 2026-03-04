@@ -69,7 +69,7 @@ async function buildAll() {
   // Create 404 fallback
   fs.copyFileSync(path.join(publicDir, "index.html"), path.join(publicDir, "404.html"));
   
-  // Create specific route folders
+  // Create specific route folders and index.html fallbacks
   const routes = [
     "/sms-privacy", 
     "/privacy-policy", 
@@ -84,7 +84,21 @@ async function buildAll() {
     if (!fs.existsSync(routeDir)) {
       fs.mkdirSync(routeDir, { recursive: true });
     }
+    // Using index.html as the fallback allows the client-side router (wouter)
+    // to pick up the route and render the correct React component while returning a 200 OK.
     fs.copyFileSync(path.join(publicDir, "index.html"), path.join(routeDir, "index.html"));
+    
+    // Also copy to route.html for Replit's static deployment specific behavior
+    fs.copyFileSync(path.join(publicDir, "index.html"), path.join(publicDir, `${route.substring(1)}.html`));
+  }
+
+  // Generate true static HTML for SEO/crawlers
+  console.log("generating true static HTML files...");
+  try {
+    const { execSync } = await import("child_process");
+    execSync("node generate-static.js", { stdio: "inherit" });
+  } catch (err) {
+    console.error("Failed to generate static files:", err);
   }
 }
 
