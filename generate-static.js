@@ -50,7 +50,7 @@ const privacyContent = `
   <p>The information we collect may be used to respond to inquiries, provide services, send appointment reminders, service updates, and customer support communications.</p>
 
   <h3>SMS Communications</h3>
-  <p>By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from Ironpoint Consulting Group. These messages may include appointment reminders, service updates, and responses to your inquiries.</p>
+  <p>By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from All Seasons Mobile Detailing LLC. These messages may include appointment reminders, service updates, and responses to your inquiries.</p>
   <p>Message frequency may vary. Message and data rates may apply.</p>
   <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong>.</p>
 
@@ -93,7 +93,7 @@ const termsContent = `
   <p>All Seasons Mobile Detailing LLC is insured. However, we are not liable for damage related to pre-existing conditions (e.g., loose trim, oxidized paint, cracked leather) that may be exacerbated by standard cleaning processes.</p>
 
   <h3>8. SMS Terms of Service</h3>
-  <p>By opting in to receive SMS messages from Ironpoint Consulting Group, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.</p>
+  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.</p>
   <p>Message frequency may vary depending on your interaction with our services.</p>
   <p>Message and data rates may apply depending on your mobile carrier plan.</p>
 
@@ -105,7 +105,7 @@ const termsContent = `
 
   <h4>Customer Support</h4>
   <p>If you need assistance, please contact:</p>
-  <p><strong>Ironpoint Consulting Group</strong><br>Email: support@ironpointconsulting.org<br>Phone: (270) 319-6059</p>
+  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Email: allseasonsmobiledetailing@yahoo.com<br>Phone: (270) 319-6059</p>
 
   <h4>Carrier Disclaimer</h4>
   <p>Mobile carriers are not responsible for delayed or undelivered messages.</p>

@@ -50,7 +50,7 @@ export function TermsOfService() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS Terms of Service</h3>
           <p>
-            By opting in to receive SMS messages from Ironpoint Consulting Group, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.
+            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.
           </p>
           <p className="mt-4">
             Message frequency may vary depending on your interaction with our services.
@@ -74,8 +74,8 @@ export function TermsOfService() {
             If you need assistance, please contact:
           </p>
           <p className="mt-4">
-            <strong>Ironpoint Consulting Group</strong><br />
-            Email: support@ironpointconsulting.org<br />
+            <strong>All Seasons Mobile Detailing LLC</strong><br />
+            Email: allseasonsmobiledetailing@yahoo.com<br />
             Phone: (270) 319-6059
           </p>
 

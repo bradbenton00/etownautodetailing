@@ -21,7 +21,7 @@ export function PrivacyPolicy() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">SMS Communications</h3>
           <p>
-            By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from Ironpoint Consulting Group. These messages may include appointment reminders, service updates, and responses to your inquiries.
+            By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from All Seasons Mobile Detailing LLC. These messages may include appointment reminders, service updates, and responses to your inquiries.
           </p>
           <p className="mt-4">
             Message frequency may vary. Message and data rates may apply.
