@@ -48,31 +48,49 @@ export function TermsOfService() {
             All Seasons Mobile Detailing LLC is insured. However, we are not liable for damage related to pre-existing conditions (e.g., loose trim, oxidized paint, cracked leather) that may be exacerbated by standard cleaning processes.
           </p>
 
-          <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS/Text Messaging Terms</h3>
+          <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS Terms of Service</h3>
           <p>
-            By providing your phone number and opting in to our SMS communications, you agree to receive text messages from All Season Mobile Detailing LLC. Messages may include:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 mt-2 mb-4">
-            <li>Appointment confirmations and reminders</li>
-            <li>Service status updates and notifications</li>
-            <li>Follow-up messages after completed services</li>
-            <li>Review and feedback requests</li>
-            <li>Promotional offers and discounts (with your consent)</li>
-          </ul>
-          <p className="mt-4">
-            <strong>Opt-Out:</strong> You may opt out of receiving SMS messages at any time by replying STOP to any message. After opting out, you will receive a one-time confirmation message. You will no longer receive SMS messages unless you re-subscribe.
+            By opting in to receive SMS messages from Ironpoint Consulting Group, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.
           </p>
           <p className="mt-4">
-            <strong>Help:</strong> For assistance with our SMS program, reply HELP to any message or contact us directly.
+            Message frequency may vary depending on your interaction with our services.
           </p>
           <p className="mt-4">
-            <strong>Message and Data Rate Disclosure:</strong> Message and data rates may apply depending on your wireless carrier and mobile plan. All Season Mobile Detailing LLC is not responsible for any charges incurred from your carrier. Message frequency varies based on your interactions with our services.
+            Message and data rates may apply depending on your mobile carrier plan.
+          </p>
+
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Opt-Out Instructions</h4>
+          <p>
+            You may opt out of receiving SMS messages at any time by replying <strong>STOP</strong> to any message. You may receive a final confirmation message after opting out.
+          </p>
+
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Help Instructions</h4>
+          <p>
+            For assistance, reply <strong>HELP</strong> or contact us directly.
+          </p>
+
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Customer Support</h4>
+          <p>
+            If you need assistance, please contact:
           </p>
           <p className="mt-4">
-            <strong>Carrier Liability Disclaimer:</strong> Wireless carriers are not liable for any delayed or undelivered messages. Message delivery is subject to effective transmission by your wireless carrier. All Season Mobile Detailing LLC is not responsible for messages not received due to carrier issues, phone settings, or other factors outside our control.
+            <strong>Ironpoint Consulting Group</strong><br />
+            Email: support@ironpointconsulting.org<br />
+            Phone: (270) 319-6059
           </p>
-          <p className="mt-4">
-            <strong>Age Restriction:</strong> Our services and SMS messaging program are intended for individuals who are 18 years of age or older.
+
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Carrier Disclaimer</h4>
+          <p>
+            Mobile carriers are not responsible for delayed or undelivered messages.
+          </p>
+
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Age Restriction</h4>
+          <p>
+            You must be at least 18 years old to use our SMS communication services.
+          </p>
+
+          <p className="mt-8">
+            Please review our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> for more information about how we handle your data.
           </p>
         </div>
       </div>
