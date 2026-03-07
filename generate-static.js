@@ -42,36 +42,29 @@ const template = `<!DOCTYPE html>
 
 const privacyContent = `
   <h1>Privacy Policy</h1>
-  <p class="lead">At All Seasons Mobile Detailing LLC, we prioritize the privacy and security of our clients. This Privacy Policy outlines how we collect, use, and protect your personal information.</p>
   
-  <h3>1. Information We Collect</h3>
-  <p>We collect information that you voluntarily provide when you:</p>
-  <ul>
-    <li>Book an appointment for our services</li>
-    <li>Contact us via phone, email, or our website contact form</li>
-    <li>Sign up for our newsletter or promotions</li>
-  </ul>
-  <p>This information may include your name, phone number, email address, vehicle details, and service location address.</p>
+  <h3>Information We Collect</h3>
+  <p>We collect personal information that you voluntarily provide to us when you fill out a contact form, request information, or communicate with us. This may include your name, phone number, email address, and service details.</p>
 
-  <h3>2. How We Use Your Information</h3>
-  <p>We use the information we collect to:</p>
-  <ul>
-    <li>Schedule and perform mobile detailing services</li>
-    <li>Communicate with you regarding your appointment</li>
-    <li>Process payments securely</li>
-    <li>Send appointment reminders and updates</li>
-    <li>Improve our services and customer experience</li>
-  </ul>
+  <h3>How We Use Your Information</h3>
+  <p>The information we collect may be used to respond to inquiries, provide services, send appointment reminders, service updates, and customer support communications.</p>
 
-  <h3>3. Information Sharing</h3>
-  <p>We do not sell, trade, or otherwise transfer your personal information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential.</p>
+  <h3>SMS Communications</h3>
+  <p>By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from Ironpoint Consulting Group. These messages may include appointment reminders, service updates, and responses to your inquiries.</p>
+  <p>Message frequency may vary. Message and data rates may apply.</p>
+  <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong>.</p>
 
-  <h3>4. SMS Communications</h3>
-  <p>By providing your phone number, you consent to receive text messages from us regarding your appointments and services. Message and data rates may apply. You can opt-out at any time by replying STOP.</p>
+  <h3>Mobile Information Sharing</h3>
+  <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
 
-  <h3>5. Contact Us</h3>
-  <p>If you have any questions regarding this privacy policy, you may contact us using the information below:</p>
-  <p><strong>All Seasons Mobile Detailing LLC</strong><br>140 Brentwood Drive<br>Elizabethtown, KY 42701<br>(270) 319-6059</p>
+  <h3>Cookies & Tracking</h3>
+  <p>Our website may use cookies or similar technologies to improve user experience and website functionality.</p>
+
+  <h3>Data Security</h3>
+  <p>We implement reasonable security measures to protect your personal information from unauthorized access or disclosure.</p>
+
+  <h3>User Rights</h3>
+  <p>You may request access, correction, or deletion of your personal data by contacting us.</p>
 `;
 
 const termsContent = `
