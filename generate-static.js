@@ -105,7 +105,7 @@ const termsContent = `
 
   <h4>Customer Support</h4>
   <p>If you need assistance, please contact:</p>
-  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Email: allseasonsmobiledetailing@yahoo.com<br>Phone: (270) 319-6059</p>
+  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Email: bradbenton@etownautodetailing.com<br>Phone: (270) 319-6059</p>
 
   <h4>Carrier Disclaimer</h4>
   <p>Mobile carriers are not responsible for delayed or undelivered messages.</p>

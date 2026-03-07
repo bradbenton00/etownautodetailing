@@ -75,7 +75,7 @@ export function TermsOfService() {
           </p>
           <p className="mt-4">
             <strong>All Seasons Mobile Detailing LLC</strong><br />
-            Email: allseasonsmobiledetailing@yahoo.com<br />
+            Email: bradbenton@etownautodetailing.com<br />
             Phone: (270) 319-6059
           </p>
 
