@@ -128,8 +128,10 @@ if (!fs.existsSync(publicDir)) {
 const pages = [
   { name: 'privacy-policy', title: 'Privacy Policy', content: privacyContent },
   { name: 'sms-privacy', title: 'Privacy Policy', content: privacyContent },
+  { name: 'privacy', title: 'Privacy Policy', content: privacyContent },
   { name: 'terms-of-service', title: 'Terms of Service', content: termsContent },
   { name: 'sms-terms-of-service', title: 'Terms of Service', content: termsContent },
+  { name: 'terms', title: 'Terms of Service', content: termsContent },
 ];
 
 pages.forEach(page => {

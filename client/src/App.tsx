@@ -19,8 +19,10 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/sms-privacy" component={PrivacyPolicy} />
+      <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
       <Route path="/sms-terms-of-service" component={TermsOfService} />
+      <Route path="/terms" component={TermsOfService} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -61,8 +61,8 @@ export function Footer() {
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 uppercase tracking-widest">
           <p>&copy; {new Date().getFullYear()} All Seasons Mobile Detailing LLC. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/sms-privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/sms-terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

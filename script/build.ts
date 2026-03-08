@@ -73,8 +73,10 @@ async function buildAll() {
   const routes = [
     "/sms-privacy", 
     "/privacy-policy", 
+    "/privacy",
     "/terms-of-service", 
     "/sms-terms-of-service", 
+    "/terms",
     "/faq", 
     "/book-an-appointment"
   ];
