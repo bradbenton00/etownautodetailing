@@ -24,7 +24,7 @@ export function Contact() {
 
         <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-12">
             <iframe
-                src="https://api.leadconnectorhq.com/widget/form/JtTcJylfgO6bX6ZOkq95?notrack=true"
+                src="https://api.leadconnectorhq.com/widget/form/JtTcJylfgO6bX6ZOkq95"
                 style={{
                     width: '100%',
                     height: '100%',
