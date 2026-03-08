@@ -42,29 +42,30 @@ const template = `<!DOCTYPE html>
 
 const privacyContent = `
   <h1>Privacy Policy</h1>
+  <p class="lead">All Seasons Mobile Detailing LLC respects your privacy. This policy explains how we collect, use, and protect your information.</p>
   
   <h3>Information We Collect</h3>
-  <p>We collect personal information that you voluntarily provide to us when you fill out a contact form, request a quote, book an appointment, or communicate with us. This may include your name, phone number, email address, vehicle details, service address, and appointment information.</p>
+  <p>We may collect personal information including your name, phone number, email address, vehicle details, and service location when you submit a form on our website.</p>
 
   <h3>How We Use Your Information</h3>
-  <p>We use your information to respond to inquiries, schedule and confirm appointments, provide detailing services, send service updates, and deliver customer support.</p>
+  <p>Your information is used to respond to inquiries, schedule appointments, provide detailing services, send service updates, and communicate with you regarding your request.</p>
 
   <h3>SMS Communications</h3>
-  <p>By providing your phone number and checking the consent box on our forms, you agree to receive SMS messages from All Seasons Mobile Detailing LLC related to service inquiries, appointment reminders, booking confirmations, service updates, and customer support.</p>
+  <p>If you provide your phone number and consent, you may receive SMS messages from All Seasons Mobile Detailing LLC regarding appointment reminders, service updates, and customer support.</p>
   <p>Message frequency may vary. Message and data rates may apply.</p>
-  <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong>.</p>
+  <p>You may opt out at any time by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for assistance.</p>
 
   <h3>Cookies and Tracking</h3>
-  <p>Our website may use cookies or similar technologies to improve website performance, user experience, and analytics.</p>
+  <p>Our website may use cookies or analytics tools to improve website functionality and user experience.</p>
 
   <h3>Data Security</h3>
-  <p>We implement reasonable administrative, technical, and physical safeguards to protect your personal information from unauthorized access, disclosure, or misuse.</p>
+  <p>We take reasonable steps to protect your information from unauthorized access or disclosure.</p>
 
   <h3>User Rights</h3>
-  <p>You may request access to, correction of, or deletion of your personal information by contacting us directly.</p>
+  <p>You may request access, correction, or deletion of your personal information by contacting us.</p>
 
   <h3>Mobile Information Sharing</h3>
-  <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+  <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with any third parties.</p>
 `;
 
 const termsContent = `
