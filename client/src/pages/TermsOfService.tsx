@@ -50,28 +50,28 @@ export function TermsOfService() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS Terms of Service</h3>
           <p>
-            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.
+            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, and customer support.
           </p>
           <p className="mt-4">
             Message frequency may vary depending on your interaction with our services.
           </p>
           <p className="mt-4">
-            Message and data rates may apply depending on your mobile carrier plan.
+            Message and data rates may apply.
           </p>
 
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Opt-Out Instructions</h4>
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Opt-Out</h4>
           <p>
-            You may opt out of receiving SMS messages at any time by replying <strong>STOP</strong> to any message. You may receive a final confirmation message after opting out.
+            You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message.
           </p>
 
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Help Instructions</h4>
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Help</h4>
           <p>
-            For assistance, reply <strong>HELP</strong> or contact us directly.
+            Reply <strong>HELP</strong> for assistance.
           </p>
 
           <h4 className="text-white mt-8 mb-2 text-xl font-serif">Customer Support</h4>
           <p>
-            If you need assistance, please contact:
+            If you need assistance, please contact All Seasons Mobile Detailing LLC.
           </p>
           <p className="mt-4">
             <strong>All Seasons Mobile Detailing LLC</strong><br />
@@ -84,13 +84,13 @@ export function TermsOfService() {
             Mobile carriers are not responsible for delayed or undelivered messages.
           </p>
 
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Age Restriction</h4>
+          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Age Requirement</h4>
           <p>
             You must be at least 18 years old to use our SMS communication services.
           </p>
 
           <p className="mt-8">
-            Please review our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> for more information about how we handle your data.
+            Please review our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> for more information.
           </p>
         </div>
       </div>

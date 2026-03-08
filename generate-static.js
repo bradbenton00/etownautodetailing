@@ -94,27 +94,27 @@ const termsContent = `
   <p>All Seasons Mobile Detailing LLC is insured. However, we are not liable for damage related to pre-existing conditions (e.g., loose trim, oxidized paint, cracked leather) that may be exacerbated by standard cleaning processes.</p>
 
   <h3>8. SMS Terms of Service</h3>
-  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive text messages related to customer service inquiries, appointment reminders, service updates, and other communications related to your request.</p>
+  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, and customer support.</p>
   <p>Message frequency may vary depending on your interaction with our services.</p>
-  <p>Message and data rates may apply depending on your mobile carrier plan.</p>
+  <p>Message and data rates may apply.</p>
 
-  <h4>Opt-Out Instructions</h4>
-  <p>You may opt out of receiving SMS messages at any time by replying <strong>STOP</strong> to any message. You may receive a final confirmation message after opting out.</p>
+  <h4>Opt-Out</h4>
+  <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message.</p>
 
-  <h4>Help Instructions</h4>
-  <p>For assistance, reply <strong>HELP</strong> or contact us directly.</p>
+  <h4>Help</h4>
+  <p>Reply <strong>HELP</strong> for assistance.</p>
 
   <h4>Customer Support</h4>
-  <p>If you need assistance, please contact:</p>
+  <p>If you need assistance, please contact All Seasons Mobile Detailing LLC.</p>
   <p><strong>All Seasons Mobile Detailing LLC</strong><br>Email: bradbenton@etownautodetailing.com<br>Phone: (270) 319-6059</p>
 
   <h4>Carrier Disclaimer</h4>
   <p>Mobile carriers are not responsible for delayed or undelivered messages.</p>
 
-  <h4>Age Restriction</h4>
+  <h4>Age Requirement</h4>
   <p>You must be at least 18 years old to use our SMS communication services.</p>
 
-  <p>Please review our <a href="/privacy-policy" style="color: #fff; text-decoration: underline;">Privacy Policy</a> for more information about how we handle your data.</p>
+  <p>Please review our <a href="/privacy-policy" style="color: #fff; text-decoration: underline;">Privacy Policy</a> for more information.</p>
 `;
 
 const publicDir = path.join(process.cwd(), "dist", "public");
