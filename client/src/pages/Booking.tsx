@@ -38,7 +38,7 @@ export function Booking() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px]"
+            className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px] mb-8"
           >
             <iframe 
               src="https://api.leadconnectorhq.com/widget/bookings/detailing-consult-05cd157b-421f-401d-b967-bfa42d9edcc6" 
@@ -46,6 +46,24 @@ export function Booking() {
               scrolling="no" 
               id="detailing-consult-05cd157b-421f-401d-b967-bfa42d9edcc6_1772154139677"
             />
+          </motion.div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-white/60 text-sm bg-black/40 p-6 rounded-lg border border-white/5 backdrop-blur-sm"
+          >
+            <h3 className="text-white font-serif text-xl mb-3">SMS Communication</h3>
+            <p className="mb-3">
+              If you provide your phone number through our website forms, you consent to receive SMS messages from All Seasons Mobile Detailing LLC related to appointments, service updates, and customer support.
+            </p>
+            <p className="mb-3">
+              Message frequency varies. Message and data rates may apply. You may opt out at any time by replying <strong>STOP</strong> to any message.
+            </p>
+            <p>
+              We do not share, sell, or distribute your mobile information with third parties for marketing purposes.
+            </p>
           </motion.div>
         </div>
       </section>
