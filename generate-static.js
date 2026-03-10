@@ -116,9 +116,8 @@ const termsContent = `
   <p>All Seasons Mobile Detailing LLC is insured. However, we are not liable for damage related to pre-existing conditions (e.g., loose trim, oxidized paint, cracked leather) that may be exacerbated by standard cleaning processes.</p>
 
   <h3>8. SMS Terms of Service</h3>
-  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, and customer support.</p>
-  <p>Message frequency may vary depending on your interaction with our services.</p>
-  <p>Message and data rates may apply.</p>
+  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, service updates, and customer support. Consent to receive SMS messages is not a condition of purchase.</p>
+  <p>Message frequency may vary depending on your interaction with our services. Message and data rates may apply.</p>
 
   <h4>Opt-Out</h4>
   <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message.</p>

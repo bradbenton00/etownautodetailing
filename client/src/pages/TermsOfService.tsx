@@ -50,13 +50,10 @@ export function TermsOfService() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS Terms of Service</h3>
           <p>
-            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, and customer support.
+            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, service updates, and customer support. Consent to receive SMS messages is not a condition of purchase.
           </p>
           <p className="mt-4">
-            Message frequency may vary depending on your interaction with our services.
-          </p>
-          <p className="mt-4">
-            Message and data rates may apply.
+            Message frequency may vary depending on your interaction with our services. Message and data rates may apply.
           </p>
 
           <h4 className="text-white mt-8 mb-2 text-xl font-serif">Opt-Out</h4>
