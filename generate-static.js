@@ -42,30 +42,52 @@ const template = `<!DOCTYPE html>
 
 const privacyContent = `
   <h1>Privacy Policy</h1>
-  <p class="lead">All Seasons Mobile Detailing LLC respects your privacy. This policy explains how we collect, use, and protect your information.</p>
+  <p class="text-white/50 mb-8">Effective Date: March 2026</p>
+  <p class="lead">All Seasons Mobile Detailing LLC ("we", "our", or "us") respects your privacy and is committed to protecting your personal information.</p>
   
   <h3>Information We Collect</h3>
-  <p>We may collect personal information including your name, phone number, email address, vehicle details, and service location when you submit a form on our website.</p>
+  <p>When you visit our website or request our services, we may collect the following information:</p>
+  <ul>
+    <li>Name</li>
+    <li>Phone number</li>
+    <li>Email address</li>
+    <li>Vehicle details</li>
+    <li>Service location</li>
+    <li>Information submitted through website forms or booking requests</li>
+  </ul>
 
   <h3>How We Use Your Information</h3>
-  <p>Your information is used to respond to inquiries, schedule appointments, provide detailing services, send service updates, and communicate with you regarding your request.</p>
+  <p>We use the information we collect to:</p>
+  <ul>
+    <li>Schedule and confirm detailing appointments</li>
+    <li>Provide service updates and arrival notifications</li>
+    <li>Respond to quote requests</li>
+    <li>Send follow-up communication and review requests</li>
+    <li>Improve our services and customer experience</li>
+  </ul>
 
-  <h3>SMS Communications</h3>
-  <p>If you provide your phone number and consent, you may receive SMS messages from All Seasons Mobile Detailing LLC regarding appointment reminders, service updates, and customer support.</p>
-  <p>Message frequency may vary. Message and data rates may apply.</p>
-  <p>You may opt out at any time by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for assistance.</p>
+  <h3>SMS Messaging & Communication</h3>
+  <p>By providing your phone number through our website, booking form, or direct request, you consent to receive SMS text messages from All Seasons Mobile Detailing LLC regarding appointments, service reminders, and follow-up communication.</p>
+  <p>Message frequency varies. Message and data rates may apply. You may opt out at any time by replying <strong>STOP</strong> to any message. Reply <strong>HELP</strong> for assistance.</p>
 
-  <h3>Cookies and Tracking</h3>
-  <p>Our website may use cookies or analytics tools to improve website functionality and user experience.</p>
+  <h3>Cookies and Tracking Technologies</h3>
+  <p>Our website may use cookies or basic analytics tools to understand how visitors interact with our site and improve performance.</p>
 
   <h3>Data Security</h3>
-  <p>We take reasonable steps to protect your information from unauthorized access or disclosure.</p>
+  <p>We take reasonable security measures to protect your information from unauthorized access, disclosure, or misuse.</p>
 
   <h3>User Rights</h3>
-  <p>You may request access, correction, or deletion of your personal information by contacting us.</p>
+  <p>You may request access to, correction of, or deletion of your personal information by contacting us.</p>
 
   <h3>Mobile Information Sharing</h3>
-  <p>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with any third parties.</p>
+  <p>Mobile information will not be shared, sold, or transferred to third parties or affiliates for marketing or promotional purposes.</p>
+
+  <h3>Third-Party Services</h3>
+  <p>We may use third-party services such as booking platforms, messaging systems, or payment processors to operate our business.</p>
+
+  <h3>Contact Information</h3>
+  <p>If you have questions about this Privacy Policy, you may contact us:</p>
+  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Elizabethtown, Kentucky<br>Phone: 270-319-6059</p>
 `;
 
 const termsContent = `
