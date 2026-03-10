@@ -4,7 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { GrillCleaning } from "@/components/sections/GrillCleaning";
 import { Process } from "@/components/sections/Process";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { Reviews } from "@/components/sections/Reviews";
 import { Contact } from "@/components/sections/Contact";
 import { About } from "@/components/sections/About";
 import { Results } from "@/components/sections/Results";
@@ -20,7 +20,7 @@ export default function Home() {
         <Process />
         <Results />
         <About />
-        <Testimonials />
+        <Reviews />
         <Contact />
       </main>
       <Footer />
