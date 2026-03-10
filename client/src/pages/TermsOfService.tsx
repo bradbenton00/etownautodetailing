@@ -50,40 +50,19 @@ export function TermsOfService() {
 
           <h3 className="text-white mt-12 mb-4 text-2xl font-serif">8. SMS Terms of Service</h3>
           <p>
-            By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, service updates, and customer support. Consent to receive SMS messages is not a condition of purchase.
+            By providing your phone number and opting in through our website or booking forms, you agree to receive SMS messages from All Seasons Mobile Detailing LLC regarding appointment confirmations, service updates, and customer communication.
           </p>
           <p className="mt-4">
-            Message frequency may vary depending on your interaction with our services. Message and data rates may apply.
-          </p>
-
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Opt-Out</h4>
-          <p>
-            You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message.
-          </p>
-
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Help</h4>
-          <p>
-            Reply <strong>HELP</strong> for assistance.
-          </p>
-
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Customer Support</h4>
-          <p>
-            If you need assistance, please contact All Seasons Mobile Detailing LLC.
+            Message frequency varies depending on service activity. Message and data rates may apply.
           </p>
           <p className="mt-4">
-            <strong>All Seasons Mobile Detailing LLC</strong><br />
-            Email: bradbenton@etownautodetailing.com<br />
-            Phone: (270) 319-6059
+            You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong> or contact us at <a href="mailto:support@etownautodetailing.com" className="text-primary hover:underline">support@etownautodetailing.com</a>.
           </p>
-
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Carrier Disclaimer</h4>
-          <p>
-            Mobile carriers are not responsible for delayed or undelivered messages.
+          <p className="mt-4">
+            Mobile carriers are not liable for delayed or undelivered messages.
           </p>
-
-          <h4 className="text-white mt-8 mb-2 text-xl font-serif">Age Requirement</h4>
-          <p>
-            You must be at least 18 years old to use our SMS communication services.
+          <p className="mt-4">
+            You must be 18 years or older to use this service.
           </p>
 
           <p className="mt-8">

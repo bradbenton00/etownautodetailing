@@ -116,24 +116,11 @@ const termsContent = `
   <p>All Seasons Mobile Detailing LLC is insured. However, we are not liable for damage related to pre-existing conditions (e.g., loose trim, oxidized paint, cracked leather) that may be exacerbated by standard cleaning processes.</p>
 
   <h3>8. SMS Terms of Service</h3>
-  <p>By opting in to receive SMS messages from All Seasons Mobile Detailing LLC, you agree to receive messages related to service inquiries, appointment reminders, booking confirmations, service updates, and customer support. Consent to receive SMS messages is not a condition of purchase.</p>
-  <p>Message frequency may vary depending on your interaction with our services. Message and data rates may apply.</p>
-
-  <h4>Opt-Out</h4>
-  <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message.</p>
-
-  <h4>Help</h4>
-  <p>Reply <strong>HELP</strong> for assistance.</p>
-
-  <h4>Customer Support</h4>
-  <p>If you need assistance, please contact All Seasons Mobile Detailing LLC.</p>
-  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Email: bradbenton@etownautodetailing.com<br>Phone: (270) 319-6059</p>
-
-  <h4>Carrier Disclaimer</h4>
-  <p>Mobile carriers are not responsible for delayed or undelivered messages.</p>
-
-  <h4>Age Requirement</h4>
-  <p>You must be at least 18 years old to use our SMS communication services.</p>
+  <p>By providing your phone number and opting in through our website or booking forms, you agree to receive SMS messages from All Seasons Mobile Detailing LLC regarding appointment confirmations, service updates, and customer communication.</p>
+  <p>Message frequency varies depending on service activity. Message and data rates may apply.</p>
+  <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong> or contact us at <a href="mailto:support@etownautodetailing.com" style="color: #fff; text-decoration: underline;">support@etownautodetailing.com</a>.</p>
+  <p>Mobile carriers are not liable for delayed or undelivered messages.</p>
+  <p>You must be 18 years or older to use this service.</p>
 
   <p>Please review our <a href="/privacy-policy" style="color: #fff; text-decoration: underline;">Privacy Policy</a> for more information.</p>
 `;
