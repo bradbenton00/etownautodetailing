@@ -55,7 +55,8 @@ const services = [
     duration: "Varies",
     features: [
       "Exterior Aircraft Wash",
-      "Bug Removal from Leading Edges"
+      "Bug Removal from Leading Edges",
+      "Belly Wipe Down"
     ],
     isCallToBook: true
   },
