@@ -54,12 +54,8 @@ const services = [
     price: "Call for Pricing",
     duration: "Varies",
     features: [
-      "Exterior wash & degrease",
-      "Brightwork polishing",
-      "Paint sealant & protection",
-      "Interior deep cleaning",
-      "Leather & upholstery care",
-      "Strict aviation standards"
+      "Exterior Aircraft Wash",
+      "Bug Removal from Leading Edges"
     ],
     isCallToBook: true
   },
