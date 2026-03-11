@@ -49,6 +49,21 @@ const services = [
     ]
   },
   {
+    title: "Aircraft Detailing",
+    description: "Specialized care for aviation.",
+    price: "Call for Pricing",
+    duration: "Varies",
+    features: [
+      "Exterior wash & degrease",
+      "Brightwork polishing",
+      "Paint sealant & protection",
+      "Interior deep cleaning",
+      "Leather & upholstery care",
+      "Strict aviation standards"
+    ],
+    isCallToBook: true
+  },
+  {
     title: "Fleet & Maintenance",
     description: "Regular weekly or bi-weekly care.",
     price: "Custom",
@@ -129,19 +144,35 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/book-an-appointment">
-                    <Button 
-                      variant={service.highlight ? "default" : "outline"}
-                      className={`w-full rounded-none transition-colors group ${
-                        service.highlight 
-                          ? "bg-white text-black hover:bg-white/90" 
-                          : "border-white/10 hover:bg-white hover:text-black"
-                      }`}
-                    >
-                      Reserve Now
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
+                  {service.isCallToBook ? (
+                    <a href="tel:2703196059">
+                      <Button 
+                        variant={service.highlight ? "default" : "outline"}
+                        className={`w-full rounded-none transition-colors group ${
+                          service.highlight 
+                            ? "bg-white text-black hover:bg-white/90" 
+                            : "border-white/10 hover:bg-white hover:text-black"
+                        }`}
+                      >
+                        Call to Book
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Link href="/book-an-appointment">
+                      <Button 
+                        variant={service.highlight ? "default" : "outline"}
+                        className={`w-full rounded-none transition-colors group ${
+                          service.highlight 
+                            ? "bg-white text-black hover:bg-white/90" 
+                            : "border-white/10 hover:bg-white hover:text-black"
+                        }`}
+                      >
+                        Reserve Now
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
