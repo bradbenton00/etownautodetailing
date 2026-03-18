@@ -36,30 +36,12 @@ export function Contact() {
         </div>
 
         <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-12">
-            <iframe
-                src="https://api.leadconnectorhq.com/widget/form/JtTcJylfgO6bX6ZOkq95"
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    border: 'none',
-                    borderRadius: '3px',
-                    minHeight: '600px'
-                }}
-                id="inline-JtTcJylfgO6bX6ZOkq95" 
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="FB Quote Form – Detailing"
-                data-height="913"
-                data-layout-iframe-id="inline-JtTcJylfgO6bX6ZOkq95"
-                data-form-id="JtTcJylfgO6bX6ZOkq95"
-                title="FB Quote Form – Detailing"
-            >
-            </iframe>
+            <iframe 
+                src="https://api.leadconnectorhq.com/widget/group/wDbdzPB90QZvZ0kh5p9d" 
+                style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
+                scrolling="no" 
+                id="wDbdzPB90QZvZ0kh5p9d_1773842554132"
+            />
         </div>
 
         <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden">
