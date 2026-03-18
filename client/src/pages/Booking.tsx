@@ -41,10 +41,10 @@ export function Booking() {
             className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px] mb-8"
           >
             <iframe 
-              src="https://api.leadconnectorhq.com/widget/group/wDbdzPB90QZvZ0kh5p9d" 
+              src="https://api.leadconnectorhq.com/widget/bookings/brad-benton-personal-calendar-6xrqlzsmd" 
               style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
               scrolling="no" 
-              id="wDbdzPB90QZvZ0kh5p9d_1773867401857"
+              id="brad-benton-personal-calendar-6xrqlzsmd"
             />
           </motion.div>
 
