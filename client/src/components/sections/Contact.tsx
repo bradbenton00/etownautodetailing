@@ -37,10 +37,10 @@ export function Contact() {
 
         <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-12">
             <iframe 
-                src="https://api.leadconnectorhq.com/widget/booking/G09KwRr61QlWNRgK3iQB" 
+                src="https://api.leadconnectorhq.com/widget/bookings/detailng-one" 
                 style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
                 scrolling="no" 
-                id="wDbdzPB90QZvZ0kh5p9d_1773877406531"
+                id="detailng-one"
             />
         </div>
 
