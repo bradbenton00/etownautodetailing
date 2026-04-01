@@ -49,10 +49,10 @@ export function Hero() {
             </Link>
             <Button 
               variant="outline"
-              onClick={() => window.location.href = "tel:270-319-6059"}
+              onClick={() => window.location.href = "tel:502-685-9111"}
               className="border-white/20 text-white hover:bg-white hover:text-black rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
             >
-              Call Now: (270) 319-6059
+              Call Now: (502) 685-9111
             </Button>
           </div>
           

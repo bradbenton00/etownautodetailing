@@ -87,7 +87,7 @@ const privacyContent = `
 
   <h3>Contact Information</h3>
   <p>If you have questions about this Privacy Policy, you may contact us:</p>
-  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Elizabethtown, Kentucky<br>Phone: 270-319-6059</p>
+  <p><strong>All Seasons Mobile Detailing LLC</strong><br>Elizabethtown, Kentucky<br>Phone: 502-685-9111</p>
 `;
 
 const termsContent = `

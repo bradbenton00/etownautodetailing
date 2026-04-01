@@ -31,7 +31,7 @@ export function Footer() {
           <div>
             <h4 className="text-white font-medium mb-4 uppercase tracking-widest text-xs">Contact</h4>
             <ul className="space-y-3 text-white/50">
-              <li><a href="tel:2703196059" className="hover:text-white transition-colors">(270) 319-6059</a></li>
+              <li><a href="tel:5026859111" className="hover:text-white transition-colors">(502) 685-9111</a></li>
               <li><a href="mailto:bradbenton@etownautodetailing.com" className="hover:text-white transition-colors">bradbenton@etownautodetailing.com</a></li>
               <li>140 Brentwood Drive</li>
               <li>Elizabethtown, KY 42701</li>

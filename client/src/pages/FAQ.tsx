@@ -75,10 +75,10 @@ export function FAQ() {
             </Link>
             <Button 
               variant="outline"
-              onClick={() => window.location.href = "tel:270-319-6059"}
+              onClick={() => window.location.href = "tel:502-685-9111"}
               className="border-white/20 text-white hover:bg-white hover:text-black rounded-none h-12 px-8 uppercase tracking-widest text-xs"
             >
-              (270) 319-6059
+              (502) 685-9111
             </Button>
           </div>
         </div>
