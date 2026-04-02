@@ -6,7 +6,6 @@ const images = [
   "/images/gallery-1.jpg",
   "/images/gallery-2.jpg",
   "/images/gallery-3.jpg",
-  "/images/grill-before-after.jpg",
   "/images/red-truck-side.jpg",
   "/images/black-suv-front.jpg",
   "/images/black-truck-split.jpg"

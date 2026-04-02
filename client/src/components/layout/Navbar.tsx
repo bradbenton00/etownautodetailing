@@ -19,7 +19,6 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Detailing Services", href: "#services" },
-    { name: "Grill Cleaning", href: "#grill-cleaning" },
     { name: "Process", href: "#process" },
     { name: "About", href: "#about" },
     { name: "FAQ", href: "/faq" },
