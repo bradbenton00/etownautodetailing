@@ -28,7 +28,7 @@ const services = [
       "Complete interior deep clean",
       "Complete exterior detail",
       "Paint decontamination",
-      "Premium paint sealant (12mo)",
+      "Premium paint sealant",
       "Wheels & tires deep cleaned",
       "Final inspection & walk-around"
     ],
