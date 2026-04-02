@@ -8,7 +8,7 @@ const services = [
   {
     title: "Premium Interior",
     description: "Deep clean & reset for your cabin.",
-    price: "$152 + tax",
+    price: "$122 + tax",
     duration: "3-4 hrs",
     features: [
       "Deep interior vacuum",
@@ -22,7 +22,7 @@ const services = [
   {
     title: "Signature Complete",
     description: "Our most popular restoration package.",
-    price: "$339 + tax",
+    price: "$274 + tax",
     duration: "5-6 hrs",
     features: [
       "Complete interior deep clean",
@@ -37,7 +37,7 @@ const services = [
   {
     title: "Premium Exterior",
     description: "Showroom shine & protection.",
-    price: "$144 + tax",
+    price: "$116 + tax",
     duration: "3-4 hrs",
     features: [
       "Hand wash & dry",

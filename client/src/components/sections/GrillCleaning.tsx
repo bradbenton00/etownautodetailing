@@ -7,7 +7,7 @@ import { Link } from "wouter";
 const grillServices = [
   {
     title: "Standard Grill Refresh",
-    price: "$127",
+    price: "$102",
     type: "flat rate",
     features: [
       "Interior scrape + degrease",
@@ -22,7 +22,7 @@ const grillServices = [
   {
     title: "Deep Restore",
     subtitle: "(Full Disassembly)",
-    price: "$237",
+    price: "$191",
     type: "flat rate",
     features: [
       "Everything in Standard",
@@ -40,7 +40,7 @@ const grillServices = [
   {
     title: "Smoker / Large Grill",
     subtitle: "(4+ Burners)",
-    price: "$280",
+    price: "$226",
     type: "flat rate",
     features: [
       "Full deep clean",
