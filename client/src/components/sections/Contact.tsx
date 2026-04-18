@@ -22,26 +22,17 @@ export function Contact() {
           <p className="text-white/50">Veteran-Owned • Weekend Appointments Only</p>
         </div>
 
-        <div className="text-white/60 text-sm mb-8 bg-black/40 p-6 rounded-lg border border-white/5 backdrop-blur-sm">
-          <h3 className="text-white font-serif text-xl mb-3">SMS Communication</h3>
-          <p className="mb-3">
-            If you provide your phone number through our website forms, you consent to receive SMS messages from All Seasons Mobile Detailing LLC related to appointments, service updates, and customer support.
-          </p>
-          <p className="mb-3">
-            Message frequency varies. Message and data rates may apply. You may opt out at any time by replying <strong>STOP</strong> to any message.
-          </p>
-          <p>
-            We do not share, sell, or distribute your mobile information with third parties for marketing purposes.
-          </p>
-        </div>
-
-        <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-12">
+        <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden mb-4">
             <iframe 
                 src="https://api.leadconnectorhq.com/widget/bookings/detailng-one" 
                 style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
                 scrolling="no" 
                 id="detailng-one"
             />
+        </div>
+
+        <div className="text-center text-white/60 text-xs md:text-sm mb-12 px-4">
+          By providing your phone number, you agree to receive SMS messages from All Season Mobile Detailing. Message and data rates may apply. Reply STOP to opt out.
         </div>
 
         <div className="w-full bg-white/5 border border-white/10 rounded-sm overflow-hidden">
