@@ -122,7 +122,7 @@ const termsContent = `
   <p>Mobile carriers are not liable for delayed or undelivered messages.</p>
   <p>You must be 18 years or older to use this service.</p>
 
-  <p>Please review our <a href="/privacy-policy" style="color: #fff; text-decoration: underline;">Privacy Policy</a> for more information.</p>
+  <p>Please review our <a href="/privacy" style="color: #fff; text-decoration: underline;">Privacy Policy</a> for more information.</p>
 `;
 
 const publicDir = path.join(process.cwd(), "dist", "public");

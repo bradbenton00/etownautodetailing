@@ -66,7 +66,7 @@ export function TermsOfService() {
           </p>
 
           <p className="mt-8">
-            Please review our <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a> for more information.
+            Please review our <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a> for more information.
           </p>
         </div>
       </div>
