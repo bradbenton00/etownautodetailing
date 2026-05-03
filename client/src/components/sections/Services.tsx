@@ -6,6 +6,20 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
+    title: "Basic Wash & Clean Out",
+    description: "Essential maintenance for your vehicle.",
+    price: "$100 + tax",
+    duration: "1-2 hrs",
+    features: [
+      "Exterior hand wash & dry",
+      "Wheel & tire cleaning",
+      "Interior vacuum",
+      "Wipe down dash & console",
+      "Interior & exterior glass",
+      "Tire dressing applied"
+    ]
+  },
+  {
     title: "Premium Interior",
     description: "Deep clean & reset for your cabin.",
     price: "$200–$275",
@@ -113,7 +127,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-16">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
