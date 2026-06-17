@@ -1,22 +1,8 @@
 import { motion } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { useEffect } from "react";
 
 export function Booking() {
-  useEffect(() => {
-    // Load the LeadConnector script
-    const script = document.createElement("script");
-    script.src = "https://link.msgsndr.com/js/form_embed.js";
-    script.type = "text/javascript";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-white/20 selection:text-white">
       <Navbar />
@@ -38,23 +24,27 @@ export function Booking() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="bg-white/[0.02] border border-white/5 p-2 md:p-4 min-h-[600px] mb-4"
+            className="bg-white/[0.02] border border-white/5 p-8 md:p-16 mb-8 flex flex-col items-center justify-center text-center"
           >
-            <iframe 
-              src="https://api.leadconnectorhq.com/widget/bookings/detailng-one" 
-              style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "600px" }} 
-              scrolling="no" 
-              id="detailng-one"
-            />
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-center text-white/60 text-xs md:text-sm px-4"
-          >
-            By providing your phone number, you agree to receive SMS messages from All Season Mobile Detailing. Message and data rates may apply. Reply STOP to opt out.
+            <h2 className="text-2xl md:text-4xl font-serif text-white mb-6">Ready to schedule your detail?</h2>
+            <p className="text-white/60 mb-8 max-w-lg mx-auto text-lg">
+              Give us a call or send a text to check availability and book your appointment.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mb-8">
+              <a href="tel:2702576093" className="w-full">
+                <button className="w-full bg-white text-black hover:bg-white/90 rounded-none h-14 uppercase tracking-widest text-sm font-medium transition-colors">
+                  Call (270) 257-6093
+                </button>
+              </a>
+              <a href="sms:2702576093" className="w-full">
+                <button className="w-full border border-white/20 bg-transparent text-white hover:bg-white hover:text-black rounded-none h-14 uppercase tracking-widest text-sm font-medium transition-colors">
+                  Text Us
+                </button>
+              </a>
+            </div>
+            <div className="text-center text-white/40 text-xs px-4 max-w-md">
+              By calling or texting, you agree to receive SMS messages from All Season Mobile Detailing. Message and data rates may apply. Reply STOP to opt out.
+            </div>
           </motion.div>
         </div>
       </section>
