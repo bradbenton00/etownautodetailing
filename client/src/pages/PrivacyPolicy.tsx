@@ -79,7 +79,7 @@ export function PrivacyPolicy() {
           <p className="mt-4">
             <strong>All Seasons Mobile Detailing LLC</strong><br />
             Elizabethtown, Kentucky<br />
-            Phone: (270) 257-6093
+            Phone: (270) 319-6059
           </p>
         </div>
       </div>

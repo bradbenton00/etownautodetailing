@@ -13,12 +13,12 @@ export function Contact() {
             Give us a call or send a text to check availability and book your appointment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mb-8">
-            <a href="tel:2702576093" className="w-full">
+            <a href="tel:2703196059" className="w-full">
               <button className="w-full bg-white text-black hover:bg-white/90 rounded-none h-14 uppercase tracking-widest text-sm font-medium transition-colors">
-                Call (270) 257-6093
+                Call (270) 319-6059
               </button>
             </a>
-            <a href="sms:2702576093" className="w-full">
+            <a href="sms:2703196059" className="w-full">
               <button className="w-full border border-white/20 bg-transparent text-white hover:bg-white hover:text-black rounded-none h-14 uppercase tracking-widest text-sm font-medium transition-colors">
                 Text Us
               </button>
