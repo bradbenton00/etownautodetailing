@@ -6,61 +6,44 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    title: "Basic Wash & Clean Out",
-    description: "Essential maintenance for your vehicle.",
-    price: "$100 + tax",
-    duration: "1-2 hrs",
-    features: [
-      "Exterior hand wash & dry",
-      "Wheel & tire cleaning",
-      "Interior vacuum",
-      "Wipe down dash & console",
-      "Interior & exterior glass",
-      "Tire dressing applied"
-    ]
-  },
-  {
-    title: "Premium Interior",
-    description: "Deep clean & reset for your cabin.",
-    price: "$200–$275",
-    duration: "3-4 hrs",
+    title: "Interior Detail",
+    description: "Deep clean. Fresh feel.",
+    price: "Starts at $115",
+    duration: "Varies",
     features: [
       "Deep interior vacuum",
-      "Upholstery & carpet cleaning",
-      "Leather cleaning & conditioning",
-      "Dash, doors & console detailed",
+      "Wipe down dash & console",
       "Interior glass (streak-free)",
-      "Light stain treatment included"
+      "Upholstery & carpet cleaning",
+      "Leather cleaning & conditioning"
     ]
   },
   {
-    title: "Signature Complete",
-    description: "Our most popular restoration package.",
-    price: "$350–$450",
-    duration: "5-6 hrs",
+    title: "Exterior Detail",
+    description: "Shine. Protect.",
+    price: "Starts at $100",
+    duration: "Varies",
+    features: [
+      "Exterior hand wash & dry",
+      "Wheel faces cleaned",
+      "Tire dressing applied",
+      "Paint decontamination",
+      "Bug removal"
+    ]
+  },
+  {
+    title: "Complete Detail",
+    description: "The best of both (Interior + Exterior).",
+    price: "Starts at $220",
+    duration: "Varies",
     features: [
       "Complete interior deep clean",
       "Complete exterior detail",
-      "Paint decontamination",
-      "Premium paint sealant",
-      "Wheels & tires deep cleaned",
-      "Final inspection & walk-around"
+      "Includes all features from above",
+      "Attention to every detail",
+      "Results you can see"
     ],
     highlight: true
-  },
-  {
-    title: "Premium Exterior",
-    description: "Showroom shine & protection.",
-    price: "$150–$225",
-    duration: "3-4 hrs",
-    features: [
-      "Hand wash & dry",
-      "Paint decontamination",
-      "Clay bar treatment",
-      "Machine wax application",
-      "Wheel faces cleaned",
-      "Tire dressing applied"
-    ]
   },
   {
     title: "Aircraft Detailing",
