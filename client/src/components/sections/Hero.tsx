@@ -31,12 +31,12 @@ export function Hero() {
           </span>
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-tighter leading-[0.9]">
-            Premium Mobile <br />
-            <span className="italic font-light text-white/90">Auto Detailing</span>
+            Elizabethtown's Best <br />
+            <span className="italic font-light text-white/90">Mobile Auto Detailing</span>
           </h1>
 
           <p className="max-w-xl mx-auto text-white/70 text-base md:text-xl font-light leading-relaxed pt-4 px-4">
-            Designed for busy schedules — we come to you when you’re home.
+            Veteran-owned premium mobile auto detailing serving Elizabethtown, Radcliff, and surrounding areas. We clean the details so you don't have to.
           </p>
 
           <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-4">
