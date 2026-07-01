@@ -31,23 +31,31 @@ export function Process() {
 
             <div className="space-y-8">
               {[
-                { title: "Choose Your Package", desc: "Select the service level that fits your vehicle's needs." },
-                { title: "Reserve Your Weekend Slot", desc: "Book one of our limited premium weekend appointments." },
-                { title: "We Come to You", desc: "We arrive at your home fully equipped to transform your vehicle." },
-                { title: "Enjoy the Results", desc: "Showroom quality finish without leaving your driveway." }
+                { title: "Choose Your Package", desc: "Select the detailing package that best fits your vehicle's needs, whether it's an interior reset or a complete exterior shine." },
+                { title: "Schedule an Appointment", desc: "Pick a date and time that works best for your schedule. We offer flexible booking to accommodate busy professionals." },
+                { title: "We Come to You", desc: "We arrive at your location—home or office—fully equipped with our own water, power, and premium detailing supplies." },
+                { title: "Enjoy the Results", desc: "Drive a vehicle that feels brand new again. You get showroom quality results without the hassle of a drop-off." }
               ].map((step, i) => (
                 <motion.div 
                   key={i}
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.2 }}
-                  className="flex gap-6 group"
+                  transition={{ delay: i * 0.15 }}
+                  className="flex gap-6 group relative"
                 >
-                  <span className="text-xs font-mono text-white/30 pt-1">0{i + 1}</span>
-                  <div>
-                    <h3 className="text-xl text-white font-serif mb-2 group-hover:text-white/80 transition-colors">{step.title}</h3>
-                    <p className="text-sm text-white/50 leading-relaxed">{step.desc}</p>
+                  {/* Timeline connector */}
+                  {i !== 3 && (
+                    <div className="absolute left-2.5 top-8 w-[1px] h-12 bg-white/10 hidden sm:block"></div>
+                  )}
+                  
+                  <div className="w-6 h-6 rounded-full border border-white/20 flex items-center justify-center shrink-0 mt-0.5 bg-black z-10 group-hover:border-white/50 transition-colors">
+                    <span className="text-[10px] font-mono text-white/50">{i + 1}</span>
+                  </div>
+                  
+                  <div className="pb-4">
+                    <h3 className="text-lg md:text-xl text-white font-serif mb-1 md:mb-2">{step.title}</h3>
+                    <p className="text-sm md:text-base text-white/50 leading-relaxed font-light">{step.desc}</p>
                   </div>
                 </motion.div>
               ))}
