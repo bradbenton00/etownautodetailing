@@ -37,6 +37,8 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
+  --color-gold: hsl(43, 74%, 49%);
+  
   --font-sans: 'Manrope', sans-serif;
   --font-serif: 'Cormorant Garamond', serif;
   
@@ -54,11 +56,11 @@
   --popover: 0 0% 8%;
   --popover-foreground: 0 0% 95%;
 
-  --primary: 0 0% 98%;         /* White for primary actions */
+  --primary: 43 74% 49%;       /* Brand Gold */
   --primary-foreground: 0 0% 5%;
 
   --secondary: 0 0% 15%;       /* Dark gray for secondary */
-  --secondary-foreground: 0 0% 98%;
+  --secondary-foreground: 43 74% 49%; /* Gold text on dark background */
 
   --muted: 0 0% 15%;
   --muted-foreground: 0 0% 60%;

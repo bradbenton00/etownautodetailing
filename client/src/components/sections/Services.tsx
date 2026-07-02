@@ -18,7 +18,7 @@ export function Services() {
             * Final price is upon inspection
           </p>
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Detailing Packages</h2>
-          <div className="w-12 h-[1px] bg-white/20 mx-auto"></div>
+          <div className="w-12 h-[1px] bg-primary mx-auto"></div>
         </div>
 
         <div className="max-w-3xl mx-auto text-center border border-white/5 bg-white/[0.02] p-8 mb-16">
@@ -59,13 +59,13 @@ export function Services() {
                   </div>
                   <CardTitle className="font-serif text-2xl text-white mb-2">{service.title}</CardTitle>
                   <CardDescription className="text-white/50">{service.description}</CardDescription>
-                  <div className="mt-6 text-3xl font-light text-white">{service.price}</div>
+                  <div className="mt-6 text-3xl font-light text-primary">{service.price}</div>
                 </CardHeader>
                 <CardContent className="pt-8 flex-1 flex flex-col">
                   <ul className="space-y-4 mb-8 flex-1">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3 text-sm text-white/70">
-                        <Check className="w-4 h-4 text-white/40 mt-0.5 shrink-0" />
+                        <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -77,8 +77,8 @@ export function Services() {
                           variant={service.highlight ? "default" : "outline"}
                           className={`w-full rounded-none transition-colors group ${
                             service.highlight 
-                              ? "bg-white text-black hover:bg-white/90" 
-                              : "border-white/10 hover:bg-white hover:text-black"
+                              ? "bg-primary text-black hover:bg-primary/90" 
+                              : "border-primary/50 text-primary hover:bg-primary hover:text-black"
                           }`}
                         >
                           Call to Book
@@ -100,8 +100,8 @@ export function Services() {
                           variant={service.highlight ? "default" : "outline"}
                           className={`w-full rounded-none transition-colors group ${
                             service.highlight 
-                              ? "bg-white text-black hover:bg-white/90" 
-                              : "border-white/10 hover:bg-white hover:text-black"
+                              ? "bg-primary text-black hover:bg-primary/90" 
+                              : "border-primary/50 text-primary hover:bg-primary hover:text-black"
                           }`}
                         >
                           Reserve

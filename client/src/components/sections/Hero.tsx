@@ -32,7 +32,7 @@ export function Hero() {
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-tighter leading-[0.9]">
             Elizabethtown's Best <br />
-            <span className="italic font-light text-white/90">Mobile Auto Detailing</span>
+            <span className="italic font-light text-primary">Mobile Auto Detailing</span>
           </h1>
 
           <p className="max-w-xl mx-auto text-white/70 text-base md:text-xl font-light leading-relaxed pt-4 px-4">
