@@ -78,7 +78,12 @@ async function buildAll() {
     "/sms-terms-of-service", 
     "/terms",
     "/faq", 
-    "/book-an-appointment"
+    "/book-an-appointment",
+    "/services/interior-detail",
+    "/services/exterior-detail",
+    "/services/complete-detail",
+    "/services/aircraft-detailing",
+    "/services/fleet-maintenance"
   ];
   
   for (const route of routes) {

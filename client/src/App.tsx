@@ -9,6 +9,7 @@ import { Booking } from "@/pages/Booking";
 import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 import { TermsOfService } from "@/pages/TermsOfService";
 import { FAQ } from "@/pages/FAQ";
+import { ServicePage } from "@/pages/ServicePage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/book-an-appointment" component={Booking} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/services/:id" component={ServicePage} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/sms-privacy" component={PrivacyPolicy} />
       <Route path="/privacy" component={PrivacyPolicy} />

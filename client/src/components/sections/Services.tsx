@@ -3,75 +3,7 @@ import { motion } from "framer-motion";
 import { Check, ArrowRight, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    title: "Interior Detail",
-    description: "Deep clean. Fresh feel.",
-    price: "Starts at $115",
-    duration: "Varies",
-    features: [
-      "Deep interior vacuum",
-      "Wipe down dash & console",
-      "Interior glass (streak-free)",
-      "Upholstery & carpet cleaning",
-      "Leather cleaning & conditioning"
-    ]
-  },
-  {
-    title: "Exterior Detail",
-    description: "Shine. Protect.",
-    price: "Starts at $100",
-    duration: "Varies",
-    features: [
-      "Exterior hand wash & dry",
-      "Wheel faces cleaned",
-      "Tire dressing applied",
-      "Paint decontamination",
-      "Bug removal"
-    ]
-  },
-  {
-    title: "Complete Detail",
-    description: "The best of both (Interior + Exterior).",
-    price: "Starts at $220",
-    duration: "Varies",
-    features: [
-      "Complete interior deep clean",
-      "Complete exterior detail",
-      "Includes all features from above",
-      "Attention to every detail",
-      "Results you can see"
-    ],
-    highlight: true
-  },
-  {
-    title: "Aircraft Detailing",
-    description: "Specialized care for aviation.",
-    price: "Call for Pricing",
-    duration: "Varies",
-    features: [
-      "Exterior Aircraft Wash",
-      "Bug Removal from Leading Edges",
-      "Belly Wipe Down"
-    ],
-    isCallToBook: true
-  },
-  {
-    title: "Fleet & Maintenance",
-    description: "Regular weekly or bi-weekly care.",
-    price: "Custom",
-    duration: "Recurring",
-    features: [
-      "Exterior wash",
-      "Wheels & tires cleaned",
-      "Quick interior wipe",
-      "Dash, seats & glass",
-      "Weekly or Bi-Weekly schedule",
-      "Perfect for maintaining shine"
-    ]
-  }
-];
+import { services } from "@/data/services";
 
 export function Services() {
   const scrollToContact = () => {
@@ -139,33 +71,51 @@ export function Services() {
                     ))}
                   </ul>
                   {service.isCallToBook ? (
-                    <a href="tel:2703196059">
-                      <Button 
-                        variant={service.highlight ? "default" : "outline"}
-                        className={`w-full rounded-none transition-colors group ${
-                          service.highlight 
-                            ? "bg-white text-black hover:bg-white/90" 
-                            : "border-white/10 hover:bg-white hover:text-black"
-                        }`}
-                      >
-                        Call to Book
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </a>
+                    <div className="flex gap-2">
+                      <a href="tel:2703196059" className="flex-1">
+                        <Button 
+                          variant={service.highlight ? "default" : "outline"}
+                          className={`w-full rounded-none transition-colors group ${
+                            service.highlight 
+                              ? "bg-white text-black hover:bg-white/90" 
+                              : "border-white/10 hover:bg-white hover:text-black"
+                          }`}
+                        >
+                          Call to Book
+                        </Button>
+                      </a>
+                      <Link href={`/services/${service.id}`} className="flex-1">
+                        <Button 
+                          variant="outline"
+                          className="w-full rounded-none transition-colors group border-white/10 hover:bg-white hover:text-black"
+                        >
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
                   ) : (
-                    <Link href="/book-an-appointment">
-                      <Button 
-                        variant={service.highlight ? "default" : "outline"}
-                        className={`w-full rounded-none transition-colors group ${
-                          service.highlight 
-                            ? "bg-white text-black hover:bg-white/90" 
-                            : "border-white/10 hover:bg-white hover:text-black"
-                        }`}
-                      >
-                        Reserve Now
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
+                    <div className="flex gap-2">
+                      <Link href="/book-an-appointment" className="flex-1">
+                        <Button 
+                          variant={service.highlight ? "default" : "outline"}
+                          className={`w-full rounded-none transition-colors group ${
+                            service.highlight 
+                              ? "bg-white text-black hover:bg-white/90" 
+                              : "border-white/10 hover:bg-white hover:text-black"
+                          }`}
+                        >
+                          Reserve
+                        </Button>
+                      </Link>
+                      <Link href={`/services/${service.id}`} className="flex-1">
+                        <Button 
+                          variant="outline"
+                          className="w-full rounded-none transition-colors group border-white/10 hover:bg-white hover:text-black"
+                        >
+                          Learn More
+                        </Button>
+                      </Link>
+                    </div>
                   )}
                 </CardContent>
               </Card>
