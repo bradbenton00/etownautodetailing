@@ -6,13 +6,12 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-5 gap-8 mb-12">
           <div className="md:col-span-2">
-            <Link href="/" className="block mb-6 group">
-              <span className="block font-serif text-3xl md:text-4xl font-bold text-white tracking-wide leading-none group-hover:text-white/90 transition-colors">
-                All Seasons
-              </span>
-              <span className="block font-sans text-xs md:text-sm font-bold text-white/50 tracking-[0.25em] uppercase leading-relaxed ml-0.5 mt-2 group-hover:text-white/70 transition-colors">
-                Mobile Detailing LLC
-              </span>
+            <Link href="/" className="block mb-6 group w-fit">
+              <img 
+                src="/images/logo.png" 
+                alt="All Seasons Mobile Detailing Logo" 
+                className="h-24 md:h-32 object-contain hover:opacity-90 transition-opacity"
+              />
             </Link>
             <p className="text-white/50 max-w-sm leading-relaxed mb-6">
               Veteran-owned and operated mobile auto detailing serving Elizabethtown, KY. 
