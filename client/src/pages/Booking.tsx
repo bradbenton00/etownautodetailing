@@ -52,14 +52,14 @@ export function Booking() {
               transition={{ delay: 0.3 }}
               className="lg:col-span-2 bg-white/[0.02] border border-white/5 min-h-[600px] flex items-center justify-center relative overflow-hidden"
             >
-              {/* This is a placeholder for the Google iframe. Once the user provides the link, we will swap this out. */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-black/40 z-10 backdrop-blur-sm border border-dashed border-white/10 m-4">
-                <div className="w-16 h-16 border-2 border-primary border-t-transparent rounded-full animate-spin mb-6"></div>
-                <h3 className="text-xl font-serif text-white mb-2">Waiting for Calendar Link...</h3>
-                <p className="text-white/50 text-sm max-w-sm">
-                  We have built the container for your Google Booking calendar. Once we drop the link in, your customers can book right here!
-                </p>
-              </div>
+              <iframe
+                src="https://www.smsreminder.co/book/4lrCEQ7MKfbc52VW/bradley-benton"
+                width="100%"
+                height="100%"
+                style={{ border: "none", minHeight: "600px" }}
+                title="Booking Calendar"
+                className="bg-white rounded-none"
+              ></iframe>
             </motion.div>
           </div>
         </div>
