@@ -1,6 +1,10 @@
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-white/[0.02] border-t border-white/5">
+    <section id="contact" className="py-24 bg-white/[0.02] border-t border-white/5 relative">
+      {/* Invisible anchor tags for Google Ads Sitelinks */}
+      <div id="book" className="absolute -top-24"></div>
+      <div id="quote" className="absolute -top-24"></div>
+      
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-serif text-white mb-4">Book Your Appointment</h2>

@@ -11,7 +11,11 @@ export function Services() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-background">
+    <section id="services" className="py-16 md:py-24 bg-background relative">
+      {/* Invisible anchor tags for Google Ads Sitelinks */}
+      <div id="interior" className="absolute -top-24"></div>
+      <div id="ceramic" className="absolute -top-24"></div>
+      
       <div className="container mx-auto px-6">
         <div className="mb-12 md:mb-16 text-center">
           <p className="text-white/60 text-xs md:text-sm uppercase tracking-widest mb-8 border border-white/10 inline-block px-4 py-2">
