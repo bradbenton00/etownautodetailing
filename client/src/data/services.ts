@@ -66,6 +66,23 @@ export const services = [
     isCallToBook: true
   },
   {
+    id: "ceramic-coating",
+    title: "Ceramic Coating",
+    description: "Long-lasting paint protection.",
+    longDescription: "Protect your vehicle's paint with a premium ceramic coating. Provides intense gloss, hydrophobic properties, and years of protection against environmental damage. Call or text us to discuss the best coating package for your vehicle.",
+    price: "Call or text for quote",
+    duration: "Varies",
+    features: [
+      "Years of durable protection",
+      "Intense gloss & deep shine",
+      "Hydrophobic water beading",
+      "UV & chemical resistance",
+      "Professional paint prep & application"
+    ],
+    highlight: false,
+    isCallToBook: true
+  },
+  {
     id: "fleet-maintenance",
     title: "Fleet & Maintenance",
     description: "Regular weekly or bi-weekly care.",
