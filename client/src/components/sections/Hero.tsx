@@ -39,21 +39,22 @@ export function Hero() {
             Veteran-owned premium mobile auto detailing serving Elizabethtown, Radcliff, and surrounding areas. We clean the details so you don't have to.
           </p>
 
-          <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-            <Link href="/book-an-appointment">
+          <div className="pt-8 flex flex-col items-center justify-center gap-4 w-full max-w-sm mx-auto">
+            <a href="tel:2703196059" className="w-full">
               <Button 
-                className="bg-white text-black hover:bg-white/90 rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
+                className="bg-primary text-black hover:bg-primary/90 rounded-none h-16 w-full text-sm uppercase tracking-widest font-bold transition-all shadow-[0_0_20px_rgba(234,179,8,0.3)]"
               >
-                Reserve Now
+                Call: (270) 319-6059
               </Button>
-            </Link>
-            <Button 
-              variant="outline"
-              onClick={() => window.location.href = "tel:270-319-6059"}
-              className="border-white/20 text-white hover:bg-white hover:text-black rounded-none h-14 px-10 text-sm uppercase tracking-widest font-medium transition-all w-full md:w-auto"
-            >
-              Call Now: (270) 319-6059
-            </Button>
+            </a>
+            <a href="sms:2703196059" className="w-full">
+              <Button 
+                variant="outline"
+                className="border-primary/50 text-primary bg-black/40 backdrop-blur-sm hover:bg-primary hover:text-black rounded-none h-14 w-full text-sm uppercase tracking-widest font-medium transition-all"
+              >
+                Text for a Quote
+              </Button>
+            </a>
           </div>
           
           <p className="text-white/40 text-xs uppercase tracking-widest mt-8">
