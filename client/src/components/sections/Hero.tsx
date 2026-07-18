@@ -47,12 +47,15 @@ export function Hero() {
                 Call: (270) 319-6059
               </Button>
             </a>
-            <a href="sms:2703196059" className="w-full">
+            <a href="#quote" className="w-full" onClick={(e) => {
+              e.preventDefault();
+              document.querySelector('#quote')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               <Button 
                 variant="outline"
                 className="border-primary/50 text-primary bg-black/40 backdrop-blur-sm hover:bg-primary hover:text-black rounded-none h-14 w-full text-sm uppercase tracking-widest font-medium transition-all"
               >
-                Text for a Quote
+                Get a Quote Online
               </Button>
             </a>
           </div>
