@@ -75,7 +75,7 @@ export function Contact() {
                 >
                   <option value="" disabled selected className="text-white/20">Select preference...</option>
                   <option value="Mobile Service (We come to you)">Mobile Service (We come to you)</option>
-                  <option value="Drop-off (You bring it to us)">Drop-off (You bring it to us)</option>
+                  <option value="We Pick-up & Drop-off">We Pick-up & Drop-off</option>
                 </select>
               </div>
 
@@ -86,7 +86,7 @@ export function Contact() {
                   name="water_hookup" 
                   className="w-full bg-[#111111] border border-white/10 rounded-none h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors appearance-none"
                 >
-                  <option value="N/A (Drop-off)">N/A (Drop-off)</option>
+                  <option value="N/A (Pick-up & Drop-off)">N/A (Pick-up & Drop-off)</option>
                   <option value="Yes, water is available">Yes, water is available</option>
                   <option value="No, bring water">No, please bring water</option>
                 </select>
