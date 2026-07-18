@@ -53,6 +53,47 @@ export function Contact() {
             </div>
 
             <div className="space-y-2">
+              <label htmlFor="home-address" className="text-sm font-medium text-white/80">Service Address *</label>
+              <input 
+                type="text" 
+                id="home-address" 
+                name="address" 
+                required 
+                className="w-full bg-white/5 border border-white/10 rounded-none h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors placeholder:text-white/20"
+                placeholder="123 Main St, Elizabethtown, KY"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="home-preference" className="text-sm font-medium text-white/80">Service Preference *</label>
+                <select 
+                  id="home-preference" 
+                  name="preference" 
+                  required
+                  className="w-full bg-[#111111] border border-white/10 rounded-none h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors appearance-none"
+                >
+                  <option value="" disabled selected className="text-white/20">Select preference...</option>
+                  <option value="Mobile Service (We come to you)">Mobile Service (We come to you)</option>
+                  <option value="Drop-off (You bring it to us)">Drop-off (You bring it to us)</option>
+                </select>
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="home-water" className="text-sm font-medium text-white/80">Water Hookup Available? (If Mobile)</label>
+                <select 
+                  id="home-water" 
+                  name="water_hookup" 
+                  className="w-full bg-[#111111] border border-white/10 rounded-none h-12 px-4 text-white focus:outline-none focus:border-primary transition-colors appearance-none"
+                >
+                  <option value="N/A (Drop-off)">N/A (Drop-off)</option>
+                  <option value="Yes, water is available">Yes, water is available</option>
+                  <option value="No, bring water">No, please bring water</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="space-y-2">
               <label htmlFor="home-service" className="text-sm font-medium text-white/80">Service Interested In *</label>
               <select 
                 id="home-service" 
