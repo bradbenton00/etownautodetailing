@@ -104,7 +104,7 @@ export function QuoteForm() {
                   >
                     <option value="N/A (Pick-up & Drop-off)">N/A (Pick-up & Drop-off)</option>
                     <option value="Yes, water is available">Yes, water is available</option>
-                    <option value="No, bring water">No, please bring water</option>
+                    <option value="No, need Pick-up & Drop-off">No, need Pick-up & Drop-off</option>
                   </select>
                 </div>
               </div>
