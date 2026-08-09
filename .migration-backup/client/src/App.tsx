@@ -1,0 +1,49 @@
+import { Switch, Route } from "wouter";
+import { queryClient } from "./lib/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import Home from "@/pages/Home";
+import { Booking } from "@/pages/Booking";
+import { QuoteForm } from "@/pages/QuoteForm";
+import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
+import { TermsOfService } from "@/pages/TermsOfService";
+import { FAQ } from "@/pages/FAQ";
+import { RVDetailingPage } from "@/pages/RVDetailingPage";
+import { ServicePage } from "@/pages/ServicePage";
+import NotFound from "@/pages/not-found";
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route path="/book-an-appointment" component={Booking} />
+      <Route path="/quote" component={QuoteForm} />
+      <Route path="/faq" component={FAQ} />
+      <Route path="/rv-detailing" component={RVDetailingPage} />
+      <Route path="/services/:id" component={ServicePage} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/sms-privacy" component={PrivacyPolicy} />
+      <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/sms-terms-of-service" component={TermsOfService} />
+      <Route path="/terms" component={TermsOfService} />
+      <Route component={NotFound} />
+    </Switch>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <ScrollToTop />
+        <Toaster />
+        <Router />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;

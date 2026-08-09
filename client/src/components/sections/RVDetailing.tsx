@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { Check, Camera } from "lucide-react";
+import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -55,12 +55,13 @@ export function RVDetailing() {
           </p>
         </div>
 
-        {/* Placeholder image — swap in a real RV photo when available */}
         <div className="max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="aspect-[16/7] border border-white/10 bg-white/[0.02] flex flex-col items-center justify-center gap-3 text-white/30">
-            <Camera className="w-8 h-8" />
-            <span className="text-xs uppercase tracking-widest">RV photo coming soon</span>
-          </div>
+          <img
+            src="/images/rv-detailing.jpg"
+            alt="Mobile RV detailing in Elizabethtown KY — washing an RV roof and exterior"
+            loading="lazy"
+            className="w-full border border-white/10 object-cover"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
