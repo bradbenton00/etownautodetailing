@@ -1,0 +1,1 @@
+- [Git + Cloudflare deploy flow](git-cloudflare-deploy.md) — commits via shell, push via gitPush callback; remote wrangler.toml is authoritative; SEO route fallbacks injected in build script.
