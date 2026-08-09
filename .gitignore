@@ -47,3 +47,14 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Replit workspace scaffolding (not needed for Cloudflare deploys)
+pnpm-workspace.yaml
+pnpm-lock.yaml
+.npmrc
+tsconfig.base.json
+artifacts/
+lib/
+scripts/
+.migration-backup/
+replit.md
