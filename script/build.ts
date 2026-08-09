@@ -102,6 +102,35 @@ async function buildAll() {
     fs.copyFileSync(path.join(publicDir, "index.html"), path.join(publicDir, `${route.substring(1)}.html`));
   }
 
+  // Inject route-specific SEO metadata into static fallbacks
+  const seoOverrides: Record<string, { title: string; description: string; canonical: string }> = {
+    "/rv-detailing": {
+      title: "RV Detailing Elizabethtown KY | Seasonal RV Detailing | All Seasons Mobile Detailing",
+      description: "Mobile RV detailing in Elizabethtown KY. Veteran-owned seasonal RV detailing packages — spring trip-ready, summer maintenance, and fall winterization. We come to you. Free quote based on your RV's size and condition.",
+      canonical: "https://etownautodetailing.com/rv-detailing",
+    },
+  };
+
+  for (const [route, seo] of Object.entries(seoOverrides)) {
+    const files = [
+      path.join(publicDir, route, "index.html"),
+      path.join(publicDir, `${route.substring(1)}.html`),
+    ];
+    for (const file of files) {
+      if (!fs.existsSync(file)) continue;
+      let html = fs.readFileSync(file, "utf-8");
+      html = html
+        .replace(/<title>[^<]*<\/title>/, `<title>${seo.title}</title>`)
+        .replace(/(<meta name="description" content=")[^"]*(")/, `$1${seo.description.replace(/"/g, "&quot;")}$2`)
+        .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${seo.title}$2`)
+        .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${seo.description.replace(/"/g, "&quot;")}$2`)
+        .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${seo.canonical}$2`)
+        .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${seo.canonical}$2`);
+      fs.writeFileSync(file, html);
+    }
+    console.log(`Injected SEO metadata for ${route}`);
+  }
+
   // Generate true static HTML for SEO/crawlers
   console.log("generating true static HTML files...");
   try {
