@@ -96,7 +96,7 @@ export function RVDetailing() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
           <a href="tel:2703196059" className="w-full sm:w-auto">
             <Button className="w-full rounded-none bg-primary text-black hover:bg-primary/90 transition-colors px-8 h-12">
-              Call for RV Quote: (270) 319-6059
+              Text/Call for a Free RV Quote
             </Button>
           </a>
           <Link href="/book-an-appointment" className="w-full sm:w-auto">
