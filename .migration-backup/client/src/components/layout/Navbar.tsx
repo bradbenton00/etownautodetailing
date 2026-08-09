@@ -19,6 +19,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Detailing Services", href: "#services" },
+    { name: "RV Detailing", href: "/rv-detailing" },
     { name: "Process", href: "#process" },
     { name: "About", href: "#about" },
     { name: "FAQ", href: "/faq" },
@@ -28,6 +29,12 @@ export function Navbar() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
+
+    if (!href.startsWith("#")) {
+      // Regular page route — navigate directly
+      setLocation(href);
+      return;
+    }
 
     if (location === "/") {
       // If on home page, scroll to section

@@ -10,6 +10,7 @@ import { QuoteForm } from "@/pages/QuoteForm";
 import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 import { TermsOfService } from "@/pages/TermsOfService";
 import { FAQ } from "@/pages/FAQ";
+import { RVDetailingPage } from "@/pages/RVDetailingPage";
 import { ServicePage } from "@/pages/ServicePage";
 import NotFound from "@/pages/not-found";
 
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/book-an-appointment" component={Booking} />
       <Route path="/quote" component={QuoteForm} />
       <Route path="/faq" component={FAQ} />
+      <Route path="/rv-detailing" component={RVDetailingPage} />
       <Route path="/services/:id" component={ServicePage} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/sms-privacy" component={PrivacyPolicy} />

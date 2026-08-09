@@ -4,7 +4,7 @@ export const services = [
     title: "Interior Detail",
     description: "Deep clean. Fresh feel.",
     longDescription: "Our Interior Detail package is designed to deep clean and reset your vehicle's cabin. We tackle dirt, dust, spills, and stains to restore a fresh, new-car feeling. Perfect for daily drivers or preparing a car for sale.",
-    price: "Starts at $115",
+    price: "Starts at $140",
     duration: "Varies",
     features: [
       "Deep interior vacuum",
@@ -21,7 +21,7 @@ export const services = [
     title: "Exterior Detail",
     description: "Shine. Protect.",
     longDescription: "Protect your investment and turn heads with our Exterior Detail package. We safely remove surface contaminants, restore shine, and apply durable protection against the elements.",
-    price: "Starts at $100",
+    price: "Starts at $125",
     duration: "Varies",
     features: [
       "Exterior hand wash & dry",
@@ -38,7 +38,7 @@ export const services = [
     title: "Complete Detail",
     description: "The best of both (Interior + Exterior).",
     longDescription: "The Signature Complete Detail is our most popular restoration package. We combine our premium interior and exterior services to give your vehicle a total transformation. It's the ultimate reset for your car.",
-    price: "Starts at $220",
+    price: "Starts at $245",
     duration: "Varies",
     features: [
       "Complete interior deep clean",
