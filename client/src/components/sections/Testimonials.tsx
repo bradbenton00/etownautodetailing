@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const reviews = [
   {
+    name: "Shane McDaniel",
+    date: "Nov 01, 2025",
+    rating: 5,
+    text: "Great job detailing my car, the man showed up on time. Did an awesome job inside and out. Brad is super friendly, answered all of my questions. Sent a text to let me know when he was on the way. Already have the next detail on the schedule — also the price was great for everything he did."
+  },
+  {
     name: "Mark Kirkpatrick",
     date: "Nov 09, 2025",
     rating: 5,
