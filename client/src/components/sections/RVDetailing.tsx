@@ -55,15 +55,6 @@ export function RVDetailing() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-12 md:mb-16">
-          <img
-            src="/images/rv-detailing.jpg"
-            alt="Mobile RV detailing in Elizabethtown KY — washing an RV roof and exterior"
-            loading="lazy"
-            className="w-full border border-white/10 object-cover"
-          />
-        </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
           {rvPackages.map((pkg, index) => (
             <motion.div
