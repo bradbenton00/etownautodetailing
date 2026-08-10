@@ -99,8 +99,5 @@
     "ws": "^8.18.0",
     "zod": "^3.25.76",
     "zod-validation-error": "^3.4.0"
-  },
-  "optionalDependencies": {
-    "bufferutil": "^4.0.8"
   }
 }
