@@ -99,7 +99,7 @@ export function Services() {
                     </div>
                   ) : (
                     <div className="flex gap-2">
-                      <Link href="/book-an-appointment" className="flex-1">
+                      <a href="tel:2703196059" className="flex-1">
                         <Button 
                           variant={service.highlight ? "default" : "outline"}
                           className={`w-full rounded-none transition-colors group ${
@@ -108,9 +108,9 @@ export function Services() {
                               : "border-primary/50 text-primary hover:bg-primary hover:text-black"
                           }`}
                         >
-                          Reserve
+                           Call to Book
                         </Button>
-                      </Link>
+                      </a>
                       <Link href={`/services/${service.id}`} className="flex-1">
                         <Button 
                           variant="outline"

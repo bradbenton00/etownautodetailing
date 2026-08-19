@@ -1,12 +1,7 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
-  const scrollToContact = () => {
-    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -47,15 +42,12 @@ export function Hero() {
                 Call: (270) 319-6059
               </Button>
             </a>
-            <a href="#quote" className="w-full" onClick={(e) => {
-              e.preventDefault();
-              document.querySelector('#quote')?.scrollIntoView({ behavior: 'smooth' });
-            }}>
+            <a href="sms:2703196059" className="w-full">
               <Button 
                 variant="outline"
                 className="border-primary/50 text-primary bg-black/40 backdrop-blur-sm hover:bg-primary hover:text-black rounded-none h-14 w-full text-sm uppercase tracking-widest font-medium transition-all"
               >
-                Get a Quote Online
+                Text for a Free Quote
               </Button>
             </a>
           </div>

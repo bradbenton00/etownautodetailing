@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Check, Flame, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 
 const grillServices = [
   {
@@ -17,7 +16,7 @@ const grillServices = [
       "Exterior wipe-down",
       "Quick function check"
     ],
-    link: "/book-an-appointment" 
+    link: "tel:2703196059" 
   },
   {
     title: "Deep Restore",
@@ -35,7 +34,7 @@ const grillServices = [
     ],
     highlight: true,
     badge: "Most Popular",
-    link: "/book-an-appointment"
+    link: "tel:2703196059"
   },
   {
     title: "Smoker / Large Grill",
@@ -49,7 +48,7 @@ const grillServices = [
       "Exterior polish",
       "Function check"
     ],
-    link: "/book-an-appointment"
+    link: "tel:2703196059"
   }
 ];
 
@@ -129,7 +128,7 @@ export function GrillCleaning() {
                       </li>
                     ))}
                   </ul>
-                  <Link href={service.link}>
+                  <a href={service.link}>
                     <Button 
                       variant={service.highlight ? "default" : "outline"}
                       className={`w-full rounded-none transition-colors group ${
@@ -141,7 +140,7 @@ export function GrillCleaning() {
                       Book Now
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
-                  </Link>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -150,11 +149,11 @@ export function GrillCleaning() {
 
         {/* Footer */}
         <div className="text-center">
-          <Link href="/book-an-appointment">
+          <a href="tel:2703196059">
             <Button variant="outline" className="border-white/20 text-white hover:bg-white hover:text-black rounded-none px-8">
               Check Availability
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -78,8 +78,6 @@ async function buildAll() {
     "/sms-terms-of-service", 
     "/terms",
     "/faq", 
-    "/quote",
-    "/book-an-appointment",
     "/rv-detailing",
     "/services/interior-detail",
     "/services/exterior-detail",

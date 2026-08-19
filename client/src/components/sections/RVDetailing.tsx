@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -91,14 +90,14 @@ export function RVDetailing() {
               Text/Call for a Free RV Quote
             </Button>
           </a>
-          <Link href="/book-an-appointment" className="w-full sm:w-auto">
+          <a href="sms:2703196059" className="w-full sm:w-auto">
             <Button
               variant="outline"
               className="w-full rounded-none border-primary/50 text-primary hover:bg-primary hover:text-black transition-colors px-8 h-12"
             >
-              Reserve Now
+              Text to Reserve
             </Button>
-          </Link>
+          </a>
         </div>
 
         <p className="mt-6 text-center text-xs text-white/40 italic">

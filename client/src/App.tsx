@@ -5,8 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import Home from "@/pages/Home";
-import { Booking } from "@/pages/Booking";
-import { QuoteForm } from "@/pages/QuoteForm";
 import { PrivacyPolicy } from "@/pages/PrivacyPolicy";
 import { TermsOfService } from "@/pages/TermsOfService";
 import { FAQ } from "@/pages/FAQ";
@@ -18,8 +16,6 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/book-an-appointment" component={Booking} />
-      <Route path="/quote" component={QuoteForm} />
       <Route path="/faq" component={FAQ} />
       <Route path="/rv-detailing" component={RVDetailingPage} />
       <Route path="/services/:id" component={ServicePage} />

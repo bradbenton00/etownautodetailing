@@ -1,4 +1,4 @@
-import { useParams, Link } from "wouter";
+import { useParams } from "wouter";
 import { motion } from "framer-motion";
 import { Check, ArrowLeft, ArrowRight, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -92,12 +92,12 @@ export function ServicePage() {
                     </Button>
                   </a>
                 ) : (
-                  <Link href="/book-an-appointment">
+                  <a href="tel:2703196059">
                     <Button className="w-full h-14 text-base bg-white text-black hover:bg-white/90 rounded-none group">
-                      Reserve Your Spot
+                      Call to Reserve
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
-                  </Link>
+                  </a>
                 )}
                 
                 <div className="flex items-center justify-center gap-2 text-xs text-white/40 pt-4">

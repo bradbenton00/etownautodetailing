@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const publicDir = path.join(process.cwd(), 'dist', 'public');
-const routes = ['/sms-privacy', '/privacy-policy', '/terms-of-service', '/sms-terms-of-service', '/faq', '/book-an-appointment'];
+const routes = ['/sms-privacy', '/privacy-policy', '/terms-of-service', '/sms-terms-of-service', '/faq'];
 
 routes.forEach(route => {
   const routeDir = path.join(publicDir, route);

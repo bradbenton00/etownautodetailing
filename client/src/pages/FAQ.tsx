@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Shield, Clock } from "lucide-react";
 
@@ -68,11 +67,11 @@ export function FAQ() {
             We're happy to help. Text or call us directly to discuss your specific vehicle needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <Link href="/book-an-appointment">
+             <a href="sms:2703196059">
               <Button className="bg-white text-black hover:bg-white/90 rounded-none h-12 px-8 uppercase tracking-widest text-xs">
-                Book Now
+                 Text Us
               </Button>
-            </Link>
+             </a>
             <Button 
               variant="outline"
               onClick={() => window.location.href = "tel:270-319-6059"}

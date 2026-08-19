@@ -23,7 +23,6 @@ export function Navbar() {
     { name: "Process", href: "#process" },
     { name: "About", href: "#about" },
     { name: "FAQ", href: "/faq" },
-    { name: "Get Quote", href: "/quote" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -92,7 +91,7 @@ export function Navbar() {
             className="rounded-none border-white/20 text-white hover:bg-white hover:text-black transition-all uppercase text-xs tracking-widest px-6"
             asChild
           >
-            <Link href="/book-an-appointment">Book Now</Link>
+            <a href="tel:2703196059">Call Now</a>
           </Button>
         </div>
 
@@ -117,12 +116,12 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Link 
-              href="/book-an-appointment"
+            <a 
+              href="tel:2703196059"
               className="text-2xl font-serif text-white mt-4"
             >
-              Book Appointment
-            </Link>
+              Call (270) 319-6059
+            </a>
           </div>
         )}
       </div>
