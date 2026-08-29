@@ -38,7 +38,7 @@ export const services = [
     title: "Complete Detail",
     description: "The best of both (Interior + Exterior).",
     longDescription: "The Signature Complete Detail is our most popular restoration package. We combine our premium interior and exterior services to give your vehicle a total transformation. It's the ultimate reset for your car.",
-    price: "Starts at $245",
+    price: "Starts at $300",
     duration: "Varies",
     features: [
       "Complete interior deep clean",
