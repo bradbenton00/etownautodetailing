@@ -12,7 +12,7 @@ const rvPackages = [
       "Wax",
       "Roof cleaning",
       "Awning cleaning",
-      "Interior deep clean",
+      "Complete interior cleaning",
       "Tire & wheel treatment",
     ],
     highlight: true,
@@ -32,7 +32,7 @@ const rvPackages = [
     title: 'Fall "Winterization & Storage"',
     description: "Protect your RV before storage.",
     features: [
-      "Deep clean",
+      "Complete cleaning",
       "Protective wax & sealant",
       "Interior treatment to prevent mold & odor during winter storage",
     ],
