@@ -51,21 +51,6 @@ export const services = [
     isCallToBook: false
   },
   {
-    id: "aircraft-detailing",
-    title: "Aircraft Detailing",
-    description: "Specialized care for aviation.",
-    longDescription: "Aviation detailing requires specialized knowledge and products. We provide meticulous exterior and interior care for private aircraft, ensuring compliance with aviation safety standards while delivering a pristine finish.",
-    price: "Call for Pricing",
-    duration: "Varies",
-    features: [
-      "Exterior Aircraft Wash",
-      "Bug Removal from Leading Edges",
-      "Belly Wipe Down"
-    ],
-    highlight: false,
-    isCallToBook: true
-  },
-  {
     id: "ceramic-coating",
     title: "Ceramic Coating",
     description: "Long-lasting paint protection.",
