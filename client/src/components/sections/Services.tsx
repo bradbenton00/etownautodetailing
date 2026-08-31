@@ -43,6 +43,7 @@ export function Services() {
           </div>
           <p className="mt-6 text-xs text-white/40 italic">
             *Final price confirmed after inspection. Heavily soiled vehicles may require add-ons.
+            Results may vary depending on how the vehicle has been maintained.
           </p>
         </div>
 
