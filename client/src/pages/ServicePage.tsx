@@ -1,4 +1,4 @@
-import { useParams } from "wouter";
+import { useParams, Link } from "wouter";
 import { motion } from "framer-motion";
 import { Check, ArrowLeft, ArrowRight, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -84,21 +84,17 @@ export function ServicePage() {
               </p>
               
               <div className="space-y-4">
-                {service.isCallToBook ? (
-                  <a href="tel:2703196059" className="block">
-                    <Button className="w-full h-14 text-base bg-white text-black hover:bg-white/90 rounded-none group">
-                      Call to Book (270) 319-6059
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </a>
-                ) : (
-                  <a href="tel:2703196059">
-                    <Button className="w-full h-14 text-base bg-white text-black hover:bg-white/90 rounded-none group">
-                      Call to Reserve
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </a>
-                )}
+                <a href="tel:2703196059" className="block">
+                  <Button className="w-full h-14 text-base bg-white text-black hover:bg-white/90 rounded-none group">
+                    Call (270) 319-6059
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
+                <a href="sms:2703196059" className="block">
+                  <Button variant="outline" className="w-full h-14 text-base border-primary/50 text-primary hover:bg-primary hover:text-black rounded-none">
+                    Text Us
+                  </Button>
+                </a>
                 
                 <div className="flex items-center justify-center gap-2 text-xs text-white/40 pt-4">
                   <Shield className="w-4 h-4" />
