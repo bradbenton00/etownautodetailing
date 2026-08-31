@@ -2,8 +2,8 @@ export const services = [
   {
     id: "interior-detail",
     title: "Interior Detail",
-    description: "Deep clean. Fresh feel.",
-    longDescription: "Our Interior Detail package is designed to deep clean and reset your vehicle's cabin. We tackle dirt, dust, spills, and stains to restore a fresh, new-car feeling. Perfect for daily drivers or preparing a car for sale.",
+    description: "Clean. Fresh. Refreshed.",
+    longDescription: "Our Interior Detail package is designed to clean and reset your vehicle's cabin. We tackle dirt, dust, spills, and stains to restore a fresh, new-car feeling. Perfect for daily drivers or preparing a car for sale.",
     price: "Starts at $165",
     duration: "Varies",
     features: [
@@ -41,7 +41,7 @@ export const services = [
     price: "Starts at $300",
     duration: "Varies",
     features: [
-      "Complete interior deep clean",
+      "Complete interior cleaning",
       "Complete exterior detail",
       "Includes all features from above",
       "Attention to every detail",
