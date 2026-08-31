@@ -42,7 +42,7 @@ const grillServices = [
     price: "$226",
     type: "flat rate",
     features: [
-      "Full deep clean",
+      "Complete cleaning",
       "Smoke box / pellet tray detail",
       "Ash + grease chamber degrease",
       "Exterior polish",
