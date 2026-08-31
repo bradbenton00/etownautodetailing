@@ -74,53 +74,23 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                  {service.isCallToBook ? (
-                    <div className="flex gap-2">
-                      <a href="tel:2703196059" className="flex-1">
-                        <Button 
-                          variant={service.highlight ? "default" : "outline"}
-                          className={`w-full rounded-none transition-colors group ${
-                            service.highlight 
-                              ? "bg-primary text-black hover:bg-primary/90" 
-                              : "border-primary/50 text-primary hover:bg-primary hover:text-black"
-                          }`}
-                        >
-                          Call to Book
-                        </Button>
-                      </a>
-                      <Link href={`/services/${service.id}`} className="flex-1">
-                        <Button 
-                          variant="outline"
-                          className="w-full rounded-none transition-colors group border-white/10 hover:bg-white hover:text-black"
-                        >
-                          Learn More
-                        </Button>
-                      </Link>
-                    </div>
-                  ) : (
-                    <div className="flex gap-2">
-                      <a href="tel:2703196059" className="flex-1">
-                        <Button 
-                          variant={service.highlight ? "default" : "outline"}
-                          className={`w-full rounded-none transition-colors group ${
-                            service.highlight 
-                              ? "bg-primary text-black hover:bg-primary/90" 
-                              : "border-primary/50 text-primary hover:bg-primary hover:text-black"
-                          }`}
-                        >
-                           Call to Book
-                        </Button>
-                      </a>
-                      <Link href={`/services/${service.id}`} className="flex-1">
-                        <Button 
-                          variant="outline"
-                          className="w-full rounded-none transition-colors group border-white/10 hover:bg-white hover:text-black"
-                        >
-                          Learn More
-                        </Button>
-                      </Link>
-                    </div>
-                  )}
+                  <div className="grid grid-cols-2 gap-2">
+                    <a href="tel:2703196059">
+                      <Button className="w-full rounded-none bg-primary text-black hover:bg-primary/90">
+                        Call
+                      </Button>
+                    </a>
+                    <a href="sms:2703196059">
+                      <Button variant="outline" className="w-full rounded-none border-primary/50 text-primary hover:bg-primary hover:text-black">
+                        Text
+                      </Button>
+                    </a>
+                    <Link href={`/services/${service.id}`} className="col-span-2">
+                      <Button variant="outline" className="w-full rounded-none border-white/10 hover:bg-white hover:text-black">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </div>
                   <p className="mt-5 pt-4 border-t border-white/10 text-sm md:text-base leading-relaxed text-white/70 font-medium text-center">
                     Results may vary depending on how the vehicle has been maintained.
                   </p>
