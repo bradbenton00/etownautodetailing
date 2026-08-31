@@ -19,7 +19,7 @@ export function FAQ() {
     },
     {
       question: "Why should I choose mobile detailing over a car wash?",
-      answer: "Automated car washes can scratch your paint with abrasive brushes and harsh chemicals. Our mobile detailing service uses premium, pH-balanced products and clean microfiber towels to safely clean and protect your vehicle. Plus, we address deep cleaning needs like shampooing carpets and conditioning leather that car washes simply can't touch."
+      answer: "Automated car washes can scratch your paint with abrasive brushes and harsh chemicals. Our mobile detailing service uses premium, pH-balanced products and clean microfiber towels to safely clean and protect your vehicle. Plus, we address detailed cleaning needs like shampooing carpets and conditioning leather that car washes simply can't touch."
     },
     {
       question: "Do you need access to water and power?",
