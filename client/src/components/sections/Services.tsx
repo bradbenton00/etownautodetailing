@@ -43,7 +43,6 @@ export function Services() {
           </div>
           <p className="mt-6 text-xs text-white/40 italic">
             *Final price confirmed after inspection. Heavily soiled vehicles may require add-ons.
-            Results may vary depending on how the vehicle has been maintained.
           </p>
         </div>
 
@@ -122,6 +121,9 @@ export function Services() {
                       </Link>
                     </div>
                   )}
+                  <p className="mt-5 pt-4 border-t border-white/10 text-sm md:text-base leading-relaxed text-white/70 font-medium text-center">
+                    Results may vary depending on how the vehicle has been maintained.
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>
