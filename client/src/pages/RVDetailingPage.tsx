@@ -3,9 +3,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RVDetailing } from "@/components/sections/RVDetailing";
 
-const PAGE_TITLE = "RV Detailing Elizabethtown KY | Seasonal RV Detailing | All Seasons Mobile Detailing";
+const PAGE_TITLE = "RV Detailing Elizabethtown KY | Complete RV Detail | All Seasons Mobile Detailing";
 const PAGE_DESCRIPTION =
-  "Mobile RV detailing in Elizabethtown KY. Veteran-owned seasonal RV detailing packages — spring trip-ready, summer maintenance, and fall winterization. We come to you. Free quote based on your RV's size and condition.";
+  "Mobile RV detailing in Elizabethtown KY. Veteran-owned complete inside-and-out RV detailing. We come to you. Free quote based on your RV's size, condition, and requested services.";
 
 export function RVDetailingPage() {
   useEffect(() => {
