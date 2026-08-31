@@ -7,7 +7,7 @@ export const services = [
     price: "Starts at $165",
     duration: "Varies",
     features: [
-      "Deep interior vacuum",
+      "Thorough interior vacuum",
       "Wipe down dash & console",
       "Interior glass (streak-free)",
       "Upholstery & carpet cleaning",
