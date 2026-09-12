@@ -77,12 +77,12 @@ export function Services() {
                   <div className="grid grid-cols-2 gap-2">
                     <a href="tel:2703196059">
                       <Button className="w-full rounded-none bg-primary text-black hover:bg-primary/90">
-                        Call
+                        {service.price.includes("$") ? "Call to Book" : "Call for Quote"}
                       </Button>
                     </a>
                     <a href="sms:2703196059">
                       <Button variant="outline" className="w-full rounded-none border-primary/50 text-primary hover:bg-primary hover:text-black">
-                        Text
+                        {service.price.includes("$") ? "Text to Book" : "Text for Quote"}
                       </Button>
                     </a>
                     <Link href={`/services/${service.id}`} className="col-span-2">
