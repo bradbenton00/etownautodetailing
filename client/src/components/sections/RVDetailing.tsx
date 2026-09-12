@@ -26,8 +26,7 @@ export function RVDetailing() {
           <div className="w-12 h-[1px] bg-primary mx-auto mb-8"></div>
           <p className="max-w-3xl mx-auto text-white/60 font-light leading-relaxed">
             Veteran-owned mobile RV detailing serving Elizabethtown, Radcliff, and surrounding areas.
-            We bring the detailing to your driveway. Contact us for a free quote based on your RV's
-            size, condition, and requested services.
+            We bring the detailing to your driveway. Call or text to book your RV detailing appointment.
           </p>
         </div>
 
@@ -41,7 +40,7 @@ export function RVDetailing() {
               <CardHeader className="text-center pb-8 border-b border-white/5">
                 <CardTitle className="font-serif text-2xl text-white mb-2">{rvPackage.title}</CardTitle>
                 <CardDescription className="text-white/50">{rvPackage.description}</CardDescription>
-                <div className="mt-6 text-xl font-light text-primary">$13 per square foot — $300 minimum</div>
+                <div className="mt-6 text-xl font-light text-primary">$15 per square foot — $400 minimum</div>
               </CardHeader>
               <CardContent className="pt-8">
                 <ul className="space-y-4">
@@ -60,7 +59,7 @@ export function RVDetailing() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
           <a href="tel:2703196059" className="w-full sm:w-auto">
             <Button className="w-full rounded-none bg-primary text-black hover:bg-primary/90 transition-colors px-8 h-12">
-              Call for an RV Quote
+              Call to Book
             </Button>
           </a>
           <a href="sms:2703196059" className="w-full sm:w-auto">
@@ -68,7 +67,7 @@ export function RVDetailing() {
               variant="outline"
               className="w-full rounded-none border-primary/50 text-primary hover:bg-primary hover:text-black transition-colors px-8 h-12"
             >
-              Text for an RV Quote
+              Text to Book
             </Button>
           </a>
         </div>
