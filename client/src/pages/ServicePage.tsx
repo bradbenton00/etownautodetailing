@@ -86,13 +86,13 @@ export function ServicePage() {
               <div className="space-y-4">
                 <a href="tel:2703196059" className="block">
                   <Button className="w-full h-14 text-base bg-white text-black hover:bg-white/90 rounded-none group">
-                    Call (270) 319-6059
+                    {service.price.includes("$") ? "Call to Book" : "Call for Quote"}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
                 <a href="sms:2703196059" className="block">
                   <Button variant="outline" className="w-full h-14 text-base border-primary/50 text-primary hover:bg-primary hover:text-black rounded-none">
-                    Text Us
+                    {service.price.includes("$") ? "Text to Book" : "Text for Quote"}
                   </Button>
                 </a>
                 
