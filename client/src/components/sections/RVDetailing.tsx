@@ -40,7 +40,7 @@ export function RVDetailing() {
               <CardHeader className="text-center pb-8 border-b border-white/5">
                 <CardTitle className="font-serif text-2xl text-white mb-2">{rvPackage.title}</CardTitle>
                 <CardDescription className="text-white/50">{rvPackage.description}</CardDescription>
-                <div className="mt-6 text-xl font-light text-primary">$15 per square foot — $400 minimum</div>
+                <div className="mt-6 text-xl font-light text-primary">$12 per square foot — $400 minimum</div>
               </CardHeader>
               <CardContent className="pt-8">
                 <ul className="space-y-4">
